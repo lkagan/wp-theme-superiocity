@@ -1,0 +1,316 @@
+/*
+Theme Name: Superiocity
+Theme URI: http://superiocity.com
+Description: Proprietary theme for Superiocity, Inc.
+Author: Larry Kagan
+Author URI: http://superiocity.com
+Version: 1
+*/
+
+
+/*******************************************************************************
+* Layout
+*******************************************************************************/
+
+body {
+	margin: 0;
+	padding:0;
+	background-image: url(images/bkg.jpg);
+	background-repeat:repeat-x;
+	background-color: #3E3A39;
+	text-align: center;
+}
+
+#layout {
+    margin: 0 auto;
+    width: 682px;
+    position: relative;
+}
+
+#nameHeader {
+    margin-top:     20px;
+    height:         245px;
+    width:          681px;
+}
+
+#sloganHeader {
+    margin:         0;
+    padding:        0;
+}
+
+#menu {
+    color:          #ffffff;
+    font-weight:    bold;
+    font-size:      14px;
+    clear:          both;
+    font-family:    arial,helvetica,sans;
+    padding-top:    3px;
+    background-image: url(images/btnBackground.gif);
+    background-repeat: repeat-x;
+    line-height:    30px;
+}
+
+#menu a {
+    color:          #ffffff;
+    text-decoration: none;
+    padding-left:   17px;
+    padding-right:  17px;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+}
+
+#footer {
+    text-align:     center;
+    padding:        15px 0px 10px 0px;
+    font-size:      10px;
+    color:          #666;
+}
+
+#content {
+    margin-top:         4px;
+    background-color:   #eee;
+    text-align:         left;
+    padding:            10px 30px 20px 30px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+
+#content, #menu {
+	box-shadow: 3px 3px 10px 6px #1c1c1c;
+}
+
+
+/*******************************************************************************
+* General
+*******************************************************************************/
+
+body,td,th {
+	font-family:   verdana, helvetica, sans;
+	font-size:     12px;
+	color:         #000000;
+}
+
+a:link, a:active, a:visited {
+    color: #15418c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#phoneNumber {
+    font-size:  14px;
+    color:      #fff;
+    position:   absolute;
+    top:        10px;
+    left:       350px;
+}
+
+h2 {
+    font-size:      18px;
+    color:          #000000;
+    font-family:    verdana,arial,helvetica,sans;
+    font-weight:    bold;
+    border-top:     1px solid black;
+    border-bottom:    1px solid black;
+    padding:        3px;
+}
+
+h3 {
+    font-size:      16px;
+    color:          #000000;
+    font-family:    arial, helvetica, sans;
+    font-weight:    normal;
+    border-left:    5px #000000 solid;
+    padding-left:   5px;
+    font-weight:    bold;
+    margin-bottom:  5px;
+}
+
+h3 a:hover {
+    text-decoration: none;
+}
+
+.quote {
+    padding: 10px 30px 10px 30px;
+    border: dashed 3px #ccc;
+    width: 450px;
+    margin: 0 auto 30px auto;
+    text-align: justify;
+	border-radius: 20px;
+}
+
+.largeCap {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.box {
+    float:            right;
+    display:          block;
+    padding:           0;
+}
+
+.box .content{
+    border:           1px solid #288503;
+    padding:          5px;
+}
+
+.box ul {
+    color:             #15418c;
+    list-style:        disc;
+    margin:            5px 10px 5px 20px;
+    margin-top:        5px;
+    padding-left:      0px;
+}
+
+
+.box .heading {
+    color:              #fff;
+    padding:            2px;
+    background:         url(images/headingBG.gif) repeat-x;
+    font-weight:        bold;
+    font-size:          12px;
+    padding-left:       5px;
+}
+
+.box a {
+    font-weight: normal;
+}
+
+.textField {
+    box-shadow: 1px 1px 3px 1px #ccc inset;
+    border-radius: 3px;
+    border: solid 1px #ccc;
+}
+
+#newsBox {
+    margin-top:        10px;
+    float:             right;
+	width: 30%;
+}
+
+#newsBox .content {
+    padding-left: 45px;
+    padding-bottom: 20px;
+}
+
+#newsDate {
+    margin-left:     -40px;
+    position:        relative;
+    top:             15px;
+    font-weight:    bold;
+    font-size:      10px;
+}
+
+#siteTitle {
+    position: absolute;
+    z-index:    -10;
+}
+
+#siteSlogan {
+    position: absolute;
+    z-index:    -10;
+}
+
+#blogNav {
+    margin-top: 0px;
+    float: right;
+    margin-left: 10px;
+}
+
+#blogEntry {
+    padding:          20px;
+    text-align:       justify;
+}
+
+.different li {
+    padding-bottom: 15px;
+    margin-left:    -25px;
+}
+
+#contactForm {
+    padding-top: 30px;
+}
+
+#contactForm div {
+    padding-bottom: 5px;
+}
+
+label {
+    font-weight: bold;
+}
+
+#contactForm label {
+    width: 50px;
+    float:left;
+}
+
+#pcnBadge {
+    padding: 0 0 15px 15px;
+    clear: right;
+    float: right;
+}
+
+pre {
+    display: block;
+    background-color: #000;
+    border: 2px inset #ccc;
+    padding: 7px;
+    float: left;
+    width: 100%;
+    clear: both;
+    color: #0f0;
+    overflow:auto;
+}
+
+img {
+    border: none;
+}
+
+#main-page-content {
+    float: left;
+	width: 60%;
+}
+
+#audio-testimonial {
+    padding-top: 5px;
+    float: right;
+    text-align: center;
+    font-weight: bold;
+    font-size: .75em;
+}
+
+.portfolio .item img {
+	box-shadow: 3px 3px 10px 3px #666;
+	float: left;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+.portfolio .item img.collection {
+	box-shadow: 0 0 0 0;
+}
+
+.portfolio .item {
+	margin-bottom: 30px;
+}
+
+.portfolio .item .content {
+	float: right;
+	width: 50%;
+}
+
+.portfolio .item:after {
+	content: ' ';
+	clear: both;
+	display: table;
+}
+
+ul.certs li a {
+    font-weight: normal;
+}
