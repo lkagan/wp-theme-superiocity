@@ -45,7 +45,7 @@
                 <img src="<?= bloginfo('template_url'); ?>/images/superiocity.svg" width="80" alt="Superiocity Web Development and Design"><h1>Superiocity</h1>
             </a>
             <div class="contact">
-                <span class="phone"><i class="fa fa-phone"></i> (561) 674-5123</span><br>
+                <span class="phone"><i class="fa fa-phone"></i><a href="tel:5616745123">(561) 674-5123</a></span><br>
                 <span class="email"><i class="fa fa-envelope"></i> 
             <script type="text/javascript">
 //<![CDATA[
