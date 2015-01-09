@@ -68,8 +68,8 @@ while(x=eval(x));
         <div class="contiguous">
             <div class="masthead">
                 <dl class="text">
-                    <dt>Su&bull;per&bull;i&bull;oc&bull;i&bull;ty &mdash; <em>noun</em>:</dt>
-                    <dd>The ability to provide superior web development services, on time and within budget.</dd>
+                    <dt>Su&bull;per&bull;i&bull;oc&bull;i&bull;ty:</dt>
+                    <dd>&mdash; <em>noun</em>: The ability to provide superior web development services, on time and within budget.</dd>
                 </dl> 
                 <img class="larry" src="<?= bloginfo('template_url'); ?>/images/me.png">
             </div><!-- .masthead -->

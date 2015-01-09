@@ -36,15 +36,20 @@ li {
     clear: both;
 }
 
+html {
+    min-height: 100%;
+}
+
 body {
-    background: -webkit-linear-gradient(to bottom, #171516, #3e3a39);
-    background: -ie-linear-gradient(to bottom, #171516, #3e3a39);
-    background: -moz-linear-gradient(to bottom, #171516, #3e3a39);
-    background: linear-gradient(to bottom, #171516, #3e3a39 200px, #3e3a39);
+    background: -webkit-linear-gradient(to bottom, #171516, #3e3a39) no-repeat;
+    background: -ie-linear-gradient(to bottom, #171516, #3e3a39) no-repeat;
+    background: -moz-linear-gradient(to bottom, #171516, #3e3a39) no-repeat;
+    background: linear-gradient(to bottom, #171516, #3e3a39 200px, #3e3a39) no-repeat;
+    background-color: #3e3a39;
     font-family: Muli, verdana, sans-serif;
     letter-spacing: .03em;
     font-weight: normal;
-    height: 100%;
+    min-height: 100%;
 }
 
 .page {
@@ -118,6 +123,7 @@ header a h1 {
     border-radius: 10px;
     position: absolute;
     top: 50%;
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     left: 10%;
     color: #ccc;
@@ -436,7 +442,7 @@ ul.certs li a {
     }
 
     .masthead {
-        height: 140px;
+        height: 160px;
     }
 
     .masthead .text {
@@ -459,9 +465,6 @@ ul.certs li a {
         float: left;
         clear: both;
     }
-
-    .portfolio .content {
-    }
 }
 
 @media screen and (min-width: 1075px) {
@@ -471,6 +474,10 @@ ul.certs li a {
 }
 
 @media screen and (max-width: 600px) {
+    .page {
+        overflow: hidden;
+    }
+
     header {
         text-align: center;
     }
