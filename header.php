@@ -26,11 +26,12 @@
 		   ?>
 	</title>
 	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/favicon.png">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="<?= bloginfo('template_url') ?>/images/favicon.png" type="image/png">
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/javascript/jquery.bxslider/jquery.bxslider.min.js"></script>
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 	<?php if ( is_singular() ) wp_enqueue_script('comment-reply'); ?>
@@ -68,8 +69,8 @@ while(x=eval(x));
         <div class="contiguous">
             <div class="masthead">
                 <dl class="text">
-                    <dt>Su&bull;per&bull;i&bull;oc&bull;i&bull;ty:</dt>
-                    <dd>&mdash; <em>noun</em>: The ability to provide superior web development services, on time and within budget.</dd>
+                    <dt>[soo-peer-ee-os-i-tee]:</dt>
+                    <dd><em>noun</em>: The ability to provide superior web development services, on time and within budget.</dd>
                 </dl> 
                 <img class="larry" src="<?= bloginfo('template_url'); ?>/images/me.png">
             </div><!-- .masthead -->

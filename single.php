@@ -4,7 +4,9 @@
 
 		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			
-			<h2><?php the_title(); ?></h2>
+			<?php if( !is_front_page() ): ?>
+				<h2><?php the_title(); ?></h2>
+			<?php endif; ?>
 			
 			<?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
 
