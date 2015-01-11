@@ -22,19 +22,4 @@ $(function() {
         touchEnabled: false,
         controls: false
     });
-
-    /*
-    $(document).on('scrollstart', function() {
-        alert('hi');
-        var arrows =  $('.ls-nav-left-arrow .ls-nav-right-arrow');
-        arrows.removeClass('ls-hidden');
-        arrows.css('opacity', '0');
-    });
-
-    $(document).on('scrollstart', function() {
-        var arrows =  $('.ls-nav-left-arrow .ls-nav-right-arrow');
-        arrows.addClass('ls-hidden');
-        arrows.css('opacity', '1');
-    });
-    */
 });
