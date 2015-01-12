@@ -299,7 +299,7 @@ h3 a:hover {
 }
 
 .box.slider-wrapper {
-    display: none;
+    margin: 0 auto;
 }
 
 .bx-wrapper{
@@ -308,7 +308,7 @@ h3 a:hover {
 
 .bx-viewport {
     margin-left: -3em;
-    margin-right: -2em;
+    margin-right: .4em;
     padding-left: 2em;
 }
 
