@@ -15,11 +15,18 @@ $(function() {
     $('.main-image-block_2 a, .image-block_3 a').click(function(e) { e.preventDefault(); });
     $('.right-block .button-block a').html('View Site');
 
-    $('.bxslider').bxSlider({
-        auto: true,
-        pager: false,
-        pause: 10000,
-        touchEnabled: false,
-        controls: false
-    });
+    initSlider();
 });
+
+
+function initSlider() {
+    var testimonials = document.querySelectorAll('.slider-wrapper li');
+    var current = 0;
+    $(testimonials[current]).addClass('visible');
+
+    window.setInterval(function() {
+        $(testimonials[current]).removeClass('visible');
+        current = current == testimonials.length  - 1 ? 0 : current + 1;
+        $(testimonials[current]).addClass('visible');
+    }, 8000);
+}

@@ -31,7 +31,6 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="<?= bloginfo('template_url') ?>/images/favicon.png" type="image/png">
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-	<script src="<?php bloginfo('template_url'); ?>/javascript/jquery.bxslider/jquery.bxslider.min.js"></script>
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 	<?php if ( is_singular() ) wp_enqueue_script('comment-reply'); ?>
