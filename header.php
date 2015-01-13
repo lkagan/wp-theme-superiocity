@@ -27,15 +27,11 @@
 	</title>
 	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/favicon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="<?= bloginfo('template_url') ?>/images/favicon.png" type="image/png">
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 	<?php if ( is_singular() ) wp_enqueue_script('comment-reply'); ?>
 	<?php wp_head(); ?>
-	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/javascript/main-min.js"></script>
 </head>
 
 <body <?php body_class(); ?>>

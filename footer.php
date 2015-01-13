@@ -10,5 +10,6 @@
 _uacct = "UA-2072906-1";
 urchinTracker();
 </script>
+<?php wp_footer(); ?>
 </body>
 </html>
