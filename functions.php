@@ -11,10 +11,11 @@ function enqueue_superiocity_scripts() {
 		wp_register_script( 'superiocity-main', get_bloginfo('template_url') . '/javascript/main-min.js', false, '20150113', true);
 		wp_register_style( 'font-awesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css',
 			false );
+		wp_register_style( 'google-fonts', 'http://fonts.googleapis.com/css?family=Muli', false );
 		wp_enqueue_script( 'jquery' );
 		wp_enqueue_script( 'superiocity-main' );
-		wp_register_style( 'google-fonts', 'http://fonts.googleapis.com/css?family=Muli', false );
 		wp_enqueue_style( 'font-awesome' );
+		wp_enqueue_style( 'google-fonts' );
 	}
 }
 
