@@ -35,7 +35,7 @@
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 	<?php if ( is_singular() ) wp_enqueue_script('comment-reply'); ?>
 	<?php wp_head(); ?>
-	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/javascript/main.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/javascript/main-min.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
