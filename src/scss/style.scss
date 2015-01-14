@@ -18,6 +18,10 @@ a, a:visited {
     color: #0074a2;
 }
 
+p::first-letter {
+    font-size: 1.5em;
+}
+
 p, ul {
     margin-bottom: 1.5em;
 }
