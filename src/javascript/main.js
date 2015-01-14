@@ -5,20 +5,6 @@ function setEmailLink(elementID)
     document.getElementById(elementID).innerHTML = email;
 }
 
-$(function() {
-    $('#menu-button').click(function(e) {
-        e.preventDefault();
-        $('.menu-main-menu-container').toggle(400);
-    });
-
-    // Minor portfolio plugin tweaks.
-    $('.main-image-block_2 a, .image-block_3 a').click(function(e) { e.preventDefault(); });
-    $('.right-block .button-block a').html('View Site');
-
-    initSlider();
-});
-
-
 function initSlider() {
     var testimonials = document.querySelectorAll('.slider-wrapper li');
     var current = 0;
@@ -30,3 +16,17 @@ function initSlider() {
         $(testimonials[current]).addClass('visible');
     }, 8000);
 }
+
+$(function() {
+    $('#menu-button').mouseup(function(e) {
+        e.preventDefault();
+        $('.menu-main-menu-container').toggle(400);
+    });
+
+    // Minor portfolio plugin tweaks.
+    $('.main-image-block_2 a, .image-block_3 a').click(function(e) { e.preventDefault(); return false; });
+    $('.right-block .button-block a').html('View Site');
+
+    initSlider();
+});
+
