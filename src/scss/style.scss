@@ -24,10 +24,12 @@ p, ul {
 
 ul {
     margin-left: 2em;
+    margin-bottom: 2em;
 }
 
 li {
     margin-bottom: .5em;
+    margin-left: 1em;
 }
 
 .clearfix:before, .clearfix:after {
@@ -260,9 +262,6 @@ h3 a:hover {
 
 .box ul {
     list-style:        disc;
-    margin:            5px 10px 5px 20px;
-    margin-top:        5px;
-    padding-left:      0px;
 }
 
 
@@ -305,7 +304,7 @@ h3 a:hover {
 .slider-wrapper {
     margin: 0 auto 3em auto;
     width: 90%;
-    height: 5em;
+    height: 4em;
     position: relative;
 }
 
