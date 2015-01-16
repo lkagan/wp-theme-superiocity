@@ -42,23 +42,7 @@
             </a>
             <div class="contact">
                 <span class="phone"><i class="fa fa-phone"></i><a href="tel:5616745123">(561) 674-5123</a></span><br>
-                <span class="email"><i class="fa fa-envelope"></i> 
-            <script type="text/javascript">
-//<![CDATA[
-<!--
-var x="function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
-"=50){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return o" +
-".substr(0,ol);}f(\")32,\\\"EMGRXG130\\\\XJ030\\\\330\\\\020\\\\\\\\\\\\010\\"+
-"\\400\\\\600\\\\r\\\\200\\\\500\\\\130\\\\710\\\\130\\\\530\\\\420\\\\&000\\"+
-"\\700\\\\n\\\\420\\\\320\\\\500\\\\,`771\\\\000\\\\y600\\\\d=;\\\"\\\\< spr" +
-"\\\\= -c5?#*'.4 461100\\\\%\\\\\\\\WKN^I300\\\\WCZ\\\\\\\\U^020\\\\mr\\\\IK" +
-"_D310\\\\K520\\\\n\\\\710\\\\HIAWKSW1jsyvozws\\\"(f};o nruter};))++y(^)i(tA" +
-"edoCrahc.x(edoCrahCmorf.gnirtS=+o;721=%y;2=*y))y+32(>i(fi{)++i;l<i;0=i(rof;" +
-"htgnel.x=l,\\\"\\\"=o,i rav{)y,x(f noitcnuf\")"                              ;
-while(x=eval(x));
-//-->
-//]]>
-</script></span>
+                <span class="email"><i class="fa fa-envelope"></i><span class="emailLink"></span></span>
             </div>
         </header>
         <div class="contiguous">

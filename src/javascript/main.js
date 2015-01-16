@@ -1,10 +1,3 @@
-function setEmailLink(elementID)
-{
-    var email = 'ser' + 'vice' + '@su' + 'perio' + 'city.co' + 'm';
-    email = '<a href="mai' + 'lto:' + email + '">' + email + '</a>';
-    document.getElementById(elementID).innerHTML = email;
-}
-
 function initSlider() {
     var testimonials = document.querySelectorAll('.slider-wrapper li');
     var current = 0;
@@ -15,6 +8,11 @@ function initSlider() {
         current = current == testimonials.length  - 1 ? 0 : current + 1;
         $(testimonials[current]).addClass('visible');
     }, 8000);
+}
+
+function setEmailLink() {
+    var addr = '&#115;&#101;&#114;&#118;&#105;&#99;&#101;&#64;&#115;&#117;&#112;&#101;&#114;&#105;&#111;&#99;&#105;&#116;&#121;&#46;&#99;&#111;&#109;';
+    $('.emailLink').html('<a href="mailto:' + addr + '">' + addr + '</a>');
 }
 
 $(function() {
@@ -28,5 +26,6 @@ $(function() {
     $('.right-block .button-block a').html('View Site');
 
     initSlider();
+    setEmailLink();
 });
 
