@@ -25,7 +25,6 @@
 		         echo ' - page '. $paged; }
 		   ?>
 	</title>
-	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/favicon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="<?= bloginfo('template_url') ?>/images/favicon.png" type="image/png">
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
