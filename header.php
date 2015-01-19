@@ -36,9 +36,13 @@
 <body <?php body_class(); ?>>
     <div class="page">
         <header class="clearfix">
-            <a href="/">
-                <img src="<?= bloginfo('template_url'); ?>/images/superiocity.svg" width="80" alt="Superiocity Web Development and Design"><h1>Superiocity</h1>
-            </a>
+	        <div class="branding">
+		        <a href="/"><img src="<?= bloginfo('template_url'); ?>/images/superiocity.svg" width="120" alt="Superiocity Web Development and Design"></a>
+		        <div class="comp-name">
+					<a href="/"><h1>Superiocity</h1></a>
+					<h2 style="text-docoration: none !important;">Web Development and Design</h2>
+				</div>
+	        </div>
             <div class="contact">
                 <span class="phone"><i class="fa fa-phone"></i><a href="tel:5616745123">(561) 674-5123</a></span><br>
                 <span class="email"><i class="fa fa-envelope"></i><span class="emailLink"></span></span>

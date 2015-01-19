@@ -47,10 +47,10 @@ html {
 }
 
 body {
-    background: -webkit-linear-gradient(to bottom, #171516, #3e3a39) no-repeat;
-    background: -ie-linear-gradient(to bottom, #171516, #3e3a39) no-repeat;
-    background: -moz-linear-gradient(to bottom, #171516, #3e3a39) no-repeat;
-    background: linear-gradient(to bottom, #171516, #3e3a39 200px, #3e3a39) no-repeat;
+    background: -webkit-linear-gradient(to bottom, #171516, #3e3a39 300px, #3e3a39) no-repeat;
+    background: -ie-linear-gradient(to bottom, #171516, #3e3a39 300px, #3e3a39) no-repeat;
+    background: -moz-linear-gradient(to bottom, #171516, #3e3a39 300px, #3e3a39) no-repeat;
+    background: linear-gradient(to bottom, #171516, #3e3a39 300px, #3e3a39) no-repeat;
     background-color: #3e3a39;
     font-family: Muli, verdana, sans-serif;
     letter-spacing: .03em;
@@ -72,8 +72,27 @@ header {
 header h1 {
     display: inline-block;
     font-weight: normal;
-    margin-left: .5em;
     font-size: 2.3em;
+}
+
+header  .comp-name  h2 {
+    display: block;
+    font-weight: normal;
+    margin-left: .5em;
+    font-size: .6em;
+    color: #ddd;
+    border: none;
+    letter-spacing: .1em;
+    margin-bottom: 0;
+}
+
+header img {
+    float: left;
+}
+
+header .comp-name {
+    float: left;
+    padding-left: 1.2em;
 }
 
 header a h1 {
@@ -85,7 +104,7 @@ header a h1 {
     position: absolute;
     right: 0;
     top: 0;
-    color: #ddd;
+    color: #aaa;
     font-size: .9em;
     line-height: 2em;
 }
@@ -572,7 +591,6 @@ a.group1:hover {
     }
 
     .contact {
-        right: 20px;
         top: 0;
     }
 
@@ -632,6 +650,7 @@ a.group1:hover {
     nav.menu-button {
         display: block;
     }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -641,16 +660,43 @@ a.group1:hover {
 
     header {
         text-align: center;
-    }
 
-    .contact {
-        position: relative;
-        display: block;
-        padding-left: 130px;
+        img {
+            margin-left: 1em;
+        }
+
+        .comp-name {
+            padding-left: .5em;
+        }
+
+        .branding img {
+             width: 80px;
+             margin-top: .5em;
+         }
+
+        .branding h1 {
+            font-size: 2.3em;
+            top: -25em;
+        }
+
+        .branding h2 {
+            font-size: .5em;
+        }
     }
 
     .contact .email {
         display: none;
+    }
+
+    .contact {
+        left: 0;
+        float: left;
+        margin-left: 120px;
+        position: relative;
+        display: block;
+        right: auto;
+        top: auto;
+        clear: left;
     }
 
     .contiguous {
