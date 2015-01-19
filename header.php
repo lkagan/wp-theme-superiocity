@@ -50,7 +50,7 @@
                     <dt>[soo-peer-ee-os-i-tee]:</dt>
                     <dd><em>noun</em>: The ability to provide superior web development services, on time and within budget.</dd>
                 </dl> 
-                <img class="larry" src="<?= bloginfo('template_url'); ?>/images/me.png">
+                <img class="larry" src="<?= bloginfo('template_url'); ?>/images/me2.png">
             </div><!-- .masthead -->
             <nav class="menu-button">
                 <ul class="clearfix">
