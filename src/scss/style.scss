@@ -7,6 +7,11 @@ Author URI: http://superiocity.com
 Version: 1
 */
 
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url('fonts/centuryGothic.woff') format('woff'),
+    url('fonts/centuryGothic.ttf') format('truetype');
+}
 
 * {
     margin: 0;
@@ -52,7 +57,7 @@ body {
     background: -moz-linear-gradient(to bottom, #171516, #3e3a39 300px, #3e3a39) no-repeat;
     background: linear-gradient(to bottom, #171516, #3e3a39 300px, #3e3a39) no-repeat;
     background-color: #3e3a39;
-    font-family: Muli, verdana, sans-serif;
+    font-family: "Century Gothic", "CenturyGothic", Muli, verdana, sans-serif;
     letter-spacing: .03em;
     font-weight: normal;
     min-height: 100%;
@@ -82,7 +87,7 @@ header  .comp-name  h2 {
     font-size: .6em;
     color: #ddd;
     border: none;
-    letter-spacing: .1em;
+    letter-spacing: .15em;
     margin-bottom: 0;
 }
 
