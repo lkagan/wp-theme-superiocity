@@ -7,11 +7,11 @@ add_theme_support( 'automatic-feed-link' );
 function enqueue_superiocity_scripts() {
 	if ( ! is_admin() ) {
 		wp_deregister_script( 'jquery' );
-		wp_register_script( 'jquery', ( 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js' ), false );
+		wp_register_script( 'jquery', ( '//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js' ), false );
 		wp_register_script( 'superiocity-main', get_bloginfo( 'template_url' ) . '/javascript/main-min.js', false, '20150113', false );
-		wp_register_style( 'font-awesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css',
+		wp_register_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css',
 			false );
-		wp_register_style( 'google-fonts', 'http://fonts.googleapis.com/css?family=Muli', false );
+		wp_register_style( 'google-fonts', '//fonts.googleapis.com/css?family=Muli', false );
 		wp_enqueue_script( 'jquery' );
 		wp_enqueue_script( 'superiocity-main' );
 		wp_enqueue_style( 'font-awesome' );
