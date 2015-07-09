@@ -10,11 +10,6 @@ function initSlider() {
     }, 8000);
 }
 
-function setEmailLink() {
-    var addr = '&#115;&#101;&#114;&#118;&#105;&#99;&#101;&#64;&#115;&#117;&#112;&#101;&#114;&#105;&#111;&#99;&#105;&#116;&#121;&#46;&#99;&#111;&#109;';
-    $('.emailLink').html('<a href="mailto:' + addr + '">' + addr + '</a>');
-}
-
 $(function() {
     $('#menu-button').mouseup(function(e) {
         e.preventDefault();

@@ -44,8 +44,8 @@
 				</div>
 	        </div>
             <div class="contact">
-                <span class="phone"><i class="fa fa-phone"></i><a href="tel:5616745123">(561) 674-5123</a></span><br>
-                <span class="email"><i class="fa fa-envelope"></i><span class="emailLink"></span></span>
+                <span class="phone"><i class="fa fa-phone"></i><?= eeb_content('<a href="tel:5616745123">(561) 336-1119</a>'); ?></span><br>
+                <span class="email"><i class="fa fa-envelope"></i><span class="emailLink"><?= eeb_content('<a href="mailto:service@superiocity.com">service@superiocity.com</a>'); ?></span></span>
             </div>
         </header>
         <div class="contiguous">
