@@ -21,6 +21,5 @@ $(function() {
     $('.right-block .button-block a').html('View Site');
 
     initSlider();
-    setEmailLink();
 });
 
