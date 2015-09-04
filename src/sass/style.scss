@@ -572,6 +572,10 @@ a.group1:hover {
   margin-right: 15px;
 }
 
+.right-block {
+  padding-left: 2em;
+}
+
 .social-icon {
   box-shadow: -2px 2px 10px rgba(0, 0, 0, .7);
   background-color: #333;
@@ -627,6 +631,10 @@ a.group1:hover {
     width: auto;
     float: left;
     clear: both;
+  }
+
+  .right-block {
+    padding-left: 1em;
   }
 
   .main-points {
