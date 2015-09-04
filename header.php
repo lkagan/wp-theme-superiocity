@@ -37,6 +37,11 @@
     <div class="page">
         <header class="clearfix">
 	        <div class="branding" itemscope itemtype="https://schema.org/Brand">
+            <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                  <meta itemprop="ratingValue" content="5">
+                  <meta itemprop="bestRating" content="5">
+                  <meta itemprop="ratingCount" content="12">
+            </div>
 		        <a href="/"><img itemprop="logo" src="<?= bloginfo('template_url'); ?>/images/superiocity.svg" width="120" alt="Superiocity Web Development and Design"></a>
 		        <div class="comp-name">
                     <style>

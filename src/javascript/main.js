@@ -1,16 +1,18 @@
-function initSlider() {
-    var testimonials = document.querySelectorAll('.slider-wrapper li');
-    var current = 0;
-    $(testimonials[current]).addClass('visible');
 
-    window.setInterval(function() {
-        $(testimonials[current]).removeClass('visible');
-        current = current == testimonials.length  - 1 ? 0 : current + 1;
+jQuery(document).ready(function($) {
+
+    function initSlider() {
+        var testimonials = document.querySelectorAll('.slider-wrapper li');
+        var current = 0;
         $(testimonials[current]).addClass('visible');
-    }, 8000);
-}
 
-$(function() {
+        window.setInterval(function() {
+            $(testimonials[current]).removeClass('visible');
+            current = current == testimonials.length  - 1 ? 0 : current + 1;
+            $(testimonials[current]).addClass('visible');
+        }, 8000);
+    }
+
     $('#menu-button').mouseup(function(e) {
         e.preventDefault();
         $('.menu-main-menu-container').toggle(400);
