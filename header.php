@@ -52,9 +52,9 @@
                         color: #ccc;
                     }
                     </style>
-					<a href="/"><h1 itemprop="name">Superiocity<span class="trademark">TM</span></h1></a>
+					<a href="/"><h1 itemprop="name">Superiocity<span class="trademark">SM</span></h1></a>
                     <meta itemprop="url" content="<?php echo esc_url( site_url() ) ?>">
-					<h2 style="text-docoration: none !important;">Web Development and Design</h2>
+					<h2 style="text-docoration: none !important;">Web &amp; Mobile Development &amp; Design</h2>
 				</div>
 	        </div>
             <div class="contact">
