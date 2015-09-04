@@ -66,7 +66,7 @@
             <div class="masthead">
                 <dl class="text">
                     <dt>[soo-peer-ee-os-i-tee]:</dt>
-                    <dd><em>noun</em>: The ability to provide superior web development services, on time and within budget.</dd>
+                    <dd><em>noun</em>: The ability to provide superior web and mobile development services, on time and within budget.</dd>
                 </dl> 
                 <img class="larry" src="<?= bloginfo('template_url'); ?>/images/me2.png">
             </div><!-- .masthead -->

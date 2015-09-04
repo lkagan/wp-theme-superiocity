@@ -87,7 +87,6 @@ header .comp-name h2 {
   font-size: .6em;
   color: #ddd;
   border: none;
-  letter-spacing: .15em;
   margin-bottom: 0;
 }
 
@@ -236,6 +235,27 @@ nav.menu-button {
   background-color: #eee;
   padding: 20px;
   letter-spacing: normal;
+}
+
+.single-post .main {
+  background-color: #f9f9f9;
+}
+
+.single {
+  .main {
+    padding: 2em 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .post {
+    width: 70%;
+  }
+
+  .aside {
+    margin-left: 2em;
+    flex-shrink: 0;
+  }
 }
 
 h2 {
