@@ -1,6 +1,6 @@
             </div> <!-- .main -->
             <footer>
-            &copy; Superiocity, Inc.
+            &copy; Superiocity, Inc. | <a href="/superiocity-media/" title="Superiocity Media">Superiocity Media</a>
             </footer>       
         </div>  <!-- .contiguous -->
     </div> <!-- .page -->
