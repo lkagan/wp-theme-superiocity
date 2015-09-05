@@ -44,15 +44,12 @@
             </div>
 		        <a href="/"><img itemprop="logo" src="<?= bloginfo('template_url'); ?>/images/superiocity.svg" width="120" alt="Superiocity Web Development and Design"></a>
 		        <div class="comp-name">
-                    <style>
-                    .trademark {
-                        font-size: 8px;
-                        display: inline-block;
-                        vertical-align: top;
-                        color: #ccc;
-                    }
-                    </style>
-					<a href="/"><h1 itemprop="name">Superiocity<span class="trademark">SM</span></h1></a>
+
+			        <?php if ( is_front_page() ): ?>
+						<a href="/"><h1 class="company-name" itemprop="name">Superiocity</h1></a>
+			        <?php else: ?>
+				        <a href="/"><h2 class="company-name" itemprop="name">Superiocity</h2></a>
+			        <?php endif; ?><span class="trademark">SM</span>
                     <meta itemprop="url" content="<?php echo esc_url( site_url() ) ?>">
 					<h2 style="text-docoration: none !important;">Web &amp; Mobile Development &amp; Design</h2>
 				</div>
