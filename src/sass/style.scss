@@ -316,7 +316,6 @@ nav.menu-button {
 .entries {
   img {
     box-shadow: 1px 1px 8px rgba(0, 0, 0, .5);
-    margin-right: 2em;
   }
 
   .entry {
@@ -326,6 +325,7 @@ nav.menu-button {
     margin: 1em;
 
     p {
+      margin-left: 2em;
       max-width: 500px;
     }
     img {
@@ -846,7 +846,7 @@ a.group1:hover {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .page {
     overflow: hidden;
   }
@@ -949,6 +949,10 @@ a.group1:hover {
   .portfolio-container {
     width: 100%;
     margin: 0 auto;
+  }
+
+  h1 {
+    margin: 0 0 1em;
   }
 }
 

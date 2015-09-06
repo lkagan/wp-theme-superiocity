@@ -12,7 +12,7 @@
 				<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 				<div class="entry">
 					<?php if ( has_post_thumbnail() ): ?>
-							<?php echo the_post_thumbnail( 'thumbnail' ) ?>
+							<a href="<?php the_permalink() ?>"><?php echo the_post_thumbnail( 'thumbnail' ) ?></a>
 					<?php endif; ?>
 					<div>
 						<?php the_excerpt(); ?>
