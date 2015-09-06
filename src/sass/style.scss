@@ -34,6 +34,10 @@ a, a:visited {
   color: darken($brand-color2, 10%);
 }
 
+a img {
+  border: none;
+}
+
 p::first-letter {
   font-size: 1.5em;
 }
@@ -103,6 +107,7 @@ header h2 {
   border: none;
   margin-bottom: 0;
   text-transform: uppercase;
+  line-height: 1.3em;
 }
 
 header img {
@@ -121,6 +126,7 @@ header a h1 {
   color: #fff;
   font-weight: normal;
   padding: 0;
+  line-height: 1.3em;
 }
 
 .trademark {
@@ -265,6 +271,10 @@ nav.menu-button {
   letter-spacing: normal;
   line-height: 1.5em;
 
+  .home & {
+    padding: 2em 0;
+  }
+
   h2 {
     font-size: 1.2em;
     background-color: $brand-color1;
@@ -300,7 +310,29 @@ nav.menu-button {
 }
 
 .entry, .entries {
-  width: 100%;
+  flex-shrink: 1;
+}
+
+.entries {
+  img {
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, .5);
+    margin-right: 2em;
+  }
+
+  .entry {
+    display: flex;
+    display: -ms-flexbox;
+    justify-content: space-between;
+    margin: 1em;
+
+    p {
+      max-width: 500px;
+    }
+    img {
+      align-self: flex-start;
+      flex-shrink: 0;
+    }
+  }
 }
 
 .single, .blog {
@@ -311,6 +343,7 @@ nav.menu-button {
 
   .meta {
     font-size: .7em;
+    margin-top: -2em;
   }
 
   aside {
@@ -330,8 +363,8 @@ nav.menu-button {
       background: none;
       border-radius: 0;
       line-height: normal;
-      padding-bottom: 0;
-      margin-bottom: .5em;
+      margin: 0 0 .5em 0;
+      padding: 0;
     }
 
     ul {
@@ -350,7 +383,7 @@ h1 {
   padding: 1em;
   border-radius: 8px;
   line-height: 1.5em;
-  margin: 0 -1em;
+  margin: 0 -1em 1em -1em;
 }
 
 
@@ -375,6 +408,7 @@ footer {
 .navigation {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2em;
 }
 
 h3 {
@@ -388,7 +422,6 @@ h3 a:hover {
 }
 
 .quote.box {
-  width: 80%;
   margin: 0 auto 30px auto;
   display: block;
 }
@@ -525,6 +558,7 @@ input[type=submit] {
   border-radius: 5px;
   border: 0;
   box-shadow: 1px 1px 2px rgba(0,0,0, .5);
+  -webkit-appearance: none;
 
   &:hover {
     background-color: darken($brand-color2, 10%);
@@ -680,7 +714,6 @@ a.group1:hover {
   border: 1px solid #ccc;
   background: #f9f9f9;
   margin: 1em auto;
-  width: 80%;
   vertical-align: top;
   border-radius: 8px;
   min-height: 0;
@@ -700,7 +733,6 @@ a.group1:hover {
 }
 
 .portfolio-container {
-  width: 80%;
   margin: 0 auto;
 }
 
@@ -791,7 +823,7 @@ a.group1:hover {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 775px) {
   nav ul li, nav ul li:first-child {
     display: block;
     border: none;
@@ -917,5 +949,28 @@ a.group1:hover {
   .portfolio-container {
     width: 100%;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .entries .entry {
+    display: block;
+
+    img {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  header .branding .company-name {
+    font-size: 1.7em;
+  }
+
+  header .branding h2 {
+    font-size: 8px;
   }
 }

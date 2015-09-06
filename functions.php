@@ -51,3 +51,8 @@ if ( function_exists( 'register_sidebar' ) ) {
 
 add_theme_support( 'menus' );
 add_theme_support( 'post-thumbnails', array( 'post' ) );
+
+function new_excerpt_more( $more ) {
+	return '... <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">' . __( 'read more' ) . '</a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
