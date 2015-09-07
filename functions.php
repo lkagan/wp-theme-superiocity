@@ -56,3 +56,6 @@ function new_excerpt_more( $more ) {
 	return '... <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">' . __( 'read more' ) . '</a>';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
+
+// Disable Yoast SEO structured data
+add_filter( 'wpseo_json_ld_output', '__return_false' );

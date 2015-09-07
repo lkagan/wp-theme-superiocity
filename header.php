@@ -5,6 +5,30 @@
 	<?php if (is_search()) { ?>
 	   <meta name="robots" content="noindex, nofollow" />
 	<?php } ?>
+
+	<?php if ( is_front_page() ): ?>
+		<script type="application/ld+json">
+		{
+			"@context" : "http://schema.org",
+			"@type" : "Organization",
+			"url" : "https://www.superiocity.com",
+			"logo" : "https://www.superiocity.com/wp-content/uploads/2015/09/superiocity-text-300x300.png",
+			"contactPoint" : [{
+				"@type" : "ContactPoint",
+				"telephone" : "+1-561-336-1119",
+				"contactType" : "customer service"
+			}],
+			"sameAs" : [
+				"https://www.facebook.com/superiocity",
+				"https://twitter.com/superiocity_web",
+				"https://plus.google.com/+Superiocity-web",
+				"https://www.linkedin.com/company/superiocity",
+				"https://instagram.com/superiocity_web/",
+				"https://www.youtube.com/channel/UCKPDVD0PMLHbyCiWYploOvA"
+			]
+		}
+		</script>
+	<?php endif; ?>
 	<title>
 		   <?php
 		   if ( function_exists( 'is_tag' ) && is_tag() ) {
