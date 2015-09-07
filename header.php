@@ -43,21 +43,14 @@
 <body <?php body_class(); ?>>
     <div class="page">
         <header class="clearfix">
-	        <div class="branding" itemscope itemtype="https://schema.org/Brand">
-            <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
-                  <meta itemprop="ratingValue" content="5">
-                  <meta itemprop="bestRating" content="5">
-                  <meta itemprop="ratingCount" content="12">
-            </div>
-		        <a href="/"><img itemprop="logo" src="<?= bloginfo('template_url'); ?>/images/superiocity.svg" width="120" alt="Superiocity Web Development and Design"></a>
+	        <div class="branding">
+		        <a href="/"><img src="<?= bloginfo('template_url'); ?>/images/superiocity.svg" width="120" alt="Superiocity Web Development and Design"></a>
 		        <div class="comp-name">
-
 			        <?php if ( is_front_page() ): ?>
-						<a href="/"><h1 class="company-name" itemprop="name">Superiocity</h1></a>
+						<a href="/"><h1 class="company-name">Superiocity</h1></a>
 			        <?php else: ?>
-				        <a href="/"><h2 class="company-name" itemprop="name">Superiocity</h2></a>
+				        <a href="/"><h2 class="company-name">Superiocity</h2></a>
 			        <?php endif; ?><span class="trademark">SM</span>
-                    <meta itemprop="url" content="<?php echo esc_url( site_url() ) ?>">
 					<h2 style="text-docoration: none !important;">Web &amp; Mobile Development &amp; Design</h2>
 				</div>
 	        </div>
