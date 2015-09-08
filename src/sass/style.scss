@@ -398,6 +398,7 @@ nav.menu-button {
       max-width: 500px;
     }
     img {
+      border-radius: 8px;
       align-self: flex-start;
       flex-shrink: 0;
     }
@@ -814,6 +815,7 @@ a.group1:hover {
 
 .featured-image img {
   box-shadow: 1px 1px 8px rgba(0, 0, 0, .5);
+  border-radius: 8px;
 }
 
 #huge_it_portfolio_container_2>div {
