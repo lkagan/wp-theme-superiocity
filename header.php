@@ -67,11 +67,13 @@
 	        <div class="branding">
 		        <a href="/"><img src="<?= bloginfo('template_url'); ?>/images/superiocity.svg" width="120" alt="Superiocity Web Development and Design"></a>
 		        <div class="comp-name">
+			        <a href="<?php echo SUPERIOCITY_IS_MAIN_SITE ? '/' : 'https://www.superiocity.com/' ?>">
 			        <?php if ( is_front_page() ): ?>
-						<a href="/"><h1 class="company-name">Superiocity</h1></a>
+						<h1 class="company-name">Superiocity</h1>
 			        <?php else: ?>
-				        <a href="/"><h2 class="company-name">Superiocity</h2></a>
+				        <h2 class="company-name">Superiocity</h2>
 			        <?php endif; ?><span class="trademark">SM</span>
+				        </a>
                     <h2 style="text-docoration: none !important;"><?php bloginfo( 'description' ) ?></h2>
 				</div>
 	        </div>
