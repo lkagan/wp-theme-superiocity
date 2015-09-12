@@ -39,13 +39,20 @@
 			   echo ' Archive | ';
 		   } elseif ( is_search() ) {
 			   echo 'Search for &quot;' . wp_specialchars( $s ) . '&quot; - ';
+		   } else if ( is_front_page() && SUPERIOCITY_IS_MAIN_SITE ) {
+			   bloginfo();
+			   echo ' | ';
+			   wp_title();
 		   } elseif ( ! ( is_404() ) && ( is_single() ) || ( is_page() ) ) {
-			   wp_title( '|' );
+			   wp_title();
+			   echo ' | ';
+			   bloginfo();
 		   } elseif ( is_404() ) {
 			   echo 'Not Found | ';
 		   }
 		   if ( is_home() ) {
 			   echo 'Articles | ';
+			   bloginfo();
 		   } else {
 		   }
 		   if ( $paged > 1 ) {
