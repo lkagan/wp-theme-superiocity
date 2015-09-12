@@ -138,6 +138,10 @@ header img {
 header .comp-name {
   float: left;
   padding-left: 1.2em;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 header a h1 {
