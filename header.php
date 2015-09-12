@@ -75,7 +75,7 @@
 			        <?php else: ?>
 				        <a href="/"><h2 class="company-name">Superiocity</h2></a>
 			        <?php endif; ?><span class="trademark">SM</span>
-					<h2 style="text-docoration: none !important;">Web &amp; Mobile Development &amp; Design</h2>
+                    <h2 style="text-docoration: none !important;"><?php bloginfo( 'description' ) ?></h2>
 				</div>
 	        </div>
             <div class="contact">
