@@ -6,7 +6,7 @@
 	   <meta name="robots" content="noindex, nofollow" />
 	<?php } ?>
 
-	<?php if ( is_front_page() ): ?>
+	<?php if ( SUPERIOCITY_IS_MAIN_SITE && is_front_page() ): ?>
 		<script type="application/ld+json">
 		{
 			"@context" : "http://schema.org",
@@ -36,23 +36,20 @@
 			   echo '&quot; - ';
 		   } elseif ( is_archive() ) {
 			   wp_title( '' );
-			   echo ' Archive: ';
+			   echo ' Archive | ';
 		   } elseif ( is_search() ) {
 			   echo 'Search for &quot;' . wp_specialchars( $s ) . '&quot; - ';
 		   } elseif ( ! ( is_404() ) && ( is_single() ) || ( is_page() ) ) {
-			   wp_title( '' );
-			   echo ': ';
+			   wp_title( '|' );
 		   } elseif ( is_404() ) {
-			   echo 'Not Found: ';
+			   echo 'Not Found | ';
 		   }
 		   if ( is_home() ) {
-			   echo 'Articles: ';
-			   bloginfo( 'name' );
+			   echo 'Articles | ';
 		   } else {
-			   bloginfo( 'name' );
 		   }
 		   if ( $paged > 1 ) {
-			   echo ': page ' . $paged;
+			   echo ' | page ' . $paged;
 		   }
 		   ?>
 	</title>
@@ -70,11 +67,13 @@
 	        <div class="branding">
 		        <a href="/"><img src="<?= bloginfo('template_url'); ?>/images/superiocity.svg" width="120" alt="Superiocity Web Development and Design"></a>
 		        <div class="comp-name">
+			        <a href="<?php echo SUPERIOCITY_IS_MAIN_SITE ? '/' : 'https://www.superiocity.com/' ?>">
 			        <?php if ( is_front_page() ): ?>
-						<a href="/"><h1 class="company-name">Superiocity</h1></a>
+						<h1 class="company-name">Superiocity</h1>
 			        <?php else: ?>
-				        <a href="/"><h2 class="company-name">Superiocity</h2></a>
+				        <h2 class="company-name">Superiocity</h2>
 			        <?php endif; ?><span class="trademark">SM</span>
+				        </a>
                     <h2 style="text-docoration: none !important;"><?php bloginfo( 'description' ) ?></h2>
 				</div>
 	        </div>

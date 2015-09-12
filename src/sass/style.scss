@@ -37,6 +37,19 @@ img {
   height: auto;
 }
 
+.article-image {
+  box-shadow: 0 0 8px rgba(0,0,0,.5);
+}
+
+.alignright {
+  float: right;
+}
+
+img.alignright {
+  margin-left: 2em;
+  margin-bottom: 2em;
+}
+
 a, a:visited {
   color: darken($brand-color2, 10%);
 }
@@ -45,9 +58,10 @@ a img {
   border: none;
 }
 
-p::first-letter {
+p::first-letter:not(a) {
   font-size: 1.5em;
 }
+
 
 p, ul {
   margin-bottom: 1.5em;
@@ -180,6 +194,7 @@ header a h1 {
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
   position: relative;
+  box-shadow: 0 0 4px rgba(0,0,0,.5);
 }
 
 .masthead .larry {
@@ -345,6 +360,7 @@ nav.menu-button {
   }
 
   h2 {
+    overflow: auto;
     font-size: 1.2em;
     background-color: $brand-color1;
     padding: .5em;
@@ -621,7 +637,13 @@ textarea {
   width: 100%;
 }
 
-input[type=submit] {
+.nowrap {
+  white-space: nowrap;
+}
+
+input[type=submit], a.button {
+  text-decoration: none;
+  font-family: arial, sans-serif;
   font-size: 1.2em;
   color: #fff;
   background-color: $brand-color2;
@@ -913,6 +935,13 @@ a.group1:hover {
 
   nav.menu-button {
     display: block;
+  }
+
+  img.alignright {
+    display: block;
+    margin: 0 auto 2em auto;
+    clear: both;
+    float: none;
   }
 
 }
