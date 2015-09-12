@@ -1,7 +1,7 @@
             </div> <!-- .main -->
             <footer>
             &copy; Superiocity, Inc.
-	            <?php if( strpos($_SERVER['HTTP_HOST'], 'superiocity.com') !== false ): ?>
+	            <?php if ( SUPERIOCITY_IS_MAIN_SITE ) : ?>
 	            | <a href="/superiocity-media/" title="Superiocity Media">Superiocity Media</a>
 	            <?php endif; ?>
             </footer>       

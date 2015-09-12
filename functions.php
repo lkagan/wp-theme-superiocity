@@ -59,3 +59,4 @@ add_filter( 'excerpt_more', 'new_excerpt_more' );
 
 // Disable Yoast SEO structured data
 add_filter( 'wpseo_json_ld_output', '__return_false' );
+

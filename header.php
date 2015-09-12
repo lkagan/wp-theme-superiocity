@@ -6,7 +6,7 @@
 	   <meta name="robots" content="noindex, nofollow" />
 	<?php } ?>
 
-	<?php if ( is_front_page() ): ?>
+	<?php if ( SUPERIOCITY_IS_MAIN_SITE && is_front_page() ): ?>
 		<script type="application/ld+json">
 		{
 			"@context" : "http://schema.org",
@@ -36,23 +36,20 @@
 			   echo '&quot; - ';
 		   } elseif ( is_archive() ) {
 			   wp_title( '' );
-			   echo ' Archive: ';
+			   echo ' Archive | ';
 		   } elseif ( is_search() ) {
 			   echo 'Search for &quot;' . wp_specialchars( $s ) . '&quot; - ';
 		   } elseif ( ! ( is_404() ) && ( is_single() ) || ( is_page() ) ) {
-			   wp_title( '' );
-			   echo ': ';
+			   wp_title( '|' );
 		   } elseif ( is_404() ) {
-			   echo 'Not Found: ';
+			   echo 'Not Found | ';
 		   }
 		   if ( is_home() ) {
-			   echo 'Articles: ';
-			   bloginfo( 'name' );
+			   echo 'Articles | ';
 		   } else {
-			   bloginfo( 'name' );
 		   }
 		   if ( $paged > 1 ) {
-			   echo ': page ' . $paged;
+			   echo ' | page ' . $paged;
 		   }
 		   ?>
 	</title>
