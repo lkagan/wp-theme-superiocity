@@ -79,8 +79,8 @@
 				</div>
 	        </div>
             <div class="contact">
-                <span class="phone"><i class="fa fa-phone"></i><?= eeb_content('<a href="tel:5613361119">(561) 336-1119</a>'); ?></span><br>
-                <span class="email"><i class="fa fa-envelope"></i><span class="emailLink"><?= eeb_content('<a href="mailto:service@superiocity.com">service@superiocity.com</a>'); ?></span></span>
+                <span class="phone"><i class="fa fa-phone"></i><?php if( function_exists( 'eeb_content' ) )  echo eeb_content('<a href="tel:5613361119">(561) 336-1119</a>'); ?></span><br>
+                <span class="email"><i class="fa fa-envelope"></i><span class="emailLink"><? if( function_exists( 'eeb_content' ) ) echo eeb_content('<a href="mailto:service@superiocity.com">service@superiocity.com</a>'); ?></span></span>
             </div>
         </header>
         <div class="contiguous">
@@ -91,10 +91,12 @@
                 </dl> 
                 <img class="larry" src="<?= bloginfo('template_url'); ?>/images/me2.png">
             </div><!-- .masthead -->
+	        <?php if( has_nav_menu( 'superiocity-main' ) ): ?>
             <nav class="menu-button">
                 <ul class="clearfix">
                     <li><a href="#" id="menu-button"><i class="fa fa-bars"></i> Menu</a></li>
                 </ul>
             </nav>
             <?php wp_nav_menu( array( 'container' => 'nav' )); ?>
+			<?php endif; ?>
             <div class="main clearfix">
