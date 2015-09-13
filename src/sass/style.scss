@@ -28,6 +28,7 @@ $heading-color2: #0074a2;
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -35,6 +36,13 @@ html {
 img {
   max-width: 100%;
   height: auto;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .article-image {
@@ -58,10 +66,9 @@ a img {
   border: none;
 }
 
-p::first-letter {
+p:first-letter {
   font-size: 1.5em;
 }
-
 
 p, ul {
   margin-bottom: 1.5em;
