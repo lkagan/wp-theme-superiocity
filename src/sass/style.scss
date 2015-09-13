@@ -58,6 +58,15 @@ img.alignright {
   margin-bottom: 2em;
 }
 
+.alignleft {
+  float: left;
+}
+
+img.alignleft{
+  margin-right: 2em;
+  margin-bottom: 2em;
+}
+
 a, a:visited {
   color: darken($brand-color2, 10%);
 }
@@ -298,6 +307,10 @@ nav.menu-button {
   font-size: 16px;
 }
 
+ul {
+  overflow: auto;
+}
+
 .home .ratings {
   display: flex;
   justify-content: space-between;
@@ -375,7 +388,7 @@ nav.menu-button {
     font-size: 1.2em;
     background-color: $brand-color1;
     padding: .5em;
-    margin: 0 -.5em .25em -.5em;
+    margin: 0 -.5em .5em -.5em;
     line-height: 1.25em;
     color: $heading-color;
     border-radius: 6px;
@@ -951,6 +964,13 @@ a.group1:hover {
   img.alignright {
     display: block;
     margin: 0 auto 2em auto;
+    clear: both;
+    float: none;
+  }
+
+  img.alignleft{
+    display: block;
+    margin: 2em auto 0 auto;
     clear: both;
     float: none;
   }
