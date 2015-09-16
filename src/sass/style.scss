@@ -38,6 +38,10 @@ img {
   height: auto;
 }
 
+.no-shadow {
+    box-shadow: none;
+}
+
 a {
   text-decoration: none;
   &:hover {
