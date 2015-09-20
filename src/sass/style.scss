@@ -518,6 +518,14 @@ footer {
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
   border-top: solid 1px #555;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  div {
+    text-align: center;
+    flex-grow: 1;
+  }
 }
 
 .contiguous {
