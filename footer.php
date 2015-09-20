@@ -1,6 +1,6 @@
             </div> <!-- .main -->
             <footer>
-            &copy; Superiocity, Inc.
+            &copy; 2007 - <?php echo date('Y'); ?> Superiocity, Inc.
 	            <?php if ( SUPERIOCITY_IS_MAIN_SITE ) : ?>
 	            | <a href="/superiocity-media/" title="Superiocity Media">media</a>
 	            | <a href="/sitemap/" title="sitemap">sitemap</a>
