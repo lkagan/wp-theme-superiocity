@@ -28,13 +28,7 @@ jQuery(document).ready(function($) {
 
 window.addEventListener('DOMContentLoaded', function() {
     var listToggle = document.querySelector('.hide-toggle');
-
-    if(listToggle === null) {
-        return;
-    }
-
-    listToggle.onclick = function() {
-        document.cookie = 'hideSubscribeForm=1; path=/';
+    listToggle.onClick = function() {
         document.querySelector('.list-subscribe').style.display = 'none';
     }
 });
