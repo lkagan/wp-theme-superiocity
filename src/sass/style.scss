@@ -994,6 +994,80 @@ a.group1:hover {
 
 }
 
+.list-subscribe {
+  position: fixed;
+  background-color: $brand-color2;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1em;
+  box-shadow: 0 -2px 15px rgba(0,0,0, .7);
+  text-align: center;
+  opacity: 0;
+  animation-duration: 1s;
+  animation-delay: 7s;
+  animation-name: footer-fade-in;
+  animation-fill-mode: forwards;
+  font-size: 1.2em;
+  letter-spacing: normal;
+  align-items: center;
+
+  .hide-toggle {
+    position: absolute;
+    right: 1em;
+    top: 0;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .form-parts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .text {
+      text-align: left;
+      margin-right: 1em;
+    }
+  }
+
+  .button {
+    background-color: $brand-color1-light;
+    font-size: 1em;
+    padding: .25em .5em;
+    margin: .5em 0;
+
+    &:hover {
+      background-color: lighten($brand-color1-light, 10);
+    }
+  }
+
+  input[type=email] {
+    padding:.25em;
+    border-radius: .5em;
+    border: solid 1px  #ccc;
+    font-size: 1em;
+    margin: .5em 0;
+  }
+
+  .fineprint {
+    font-size: .7em;
+  }
+}
+
+@keyframes footer-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 640px) {
 
   header {

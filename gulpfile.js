@@ -39,8 +39,8 @@ gulp.task('scripts', function () {
         .pipe(sourcemaps.init())
         .pipe(concat('main.js'))
         .pipe(rename({suffix: '.min'}))
-        .pipe(uglify())
-        .pipe(sourcemaps.write('./', {includeContent: false, sourceRoot: '/src/javascript'}))
+        //.pipe(uglify())
+        //.pipe(sourcemaps.write())
         .pipe(gulp.dest('./javascript'))
         .pipe(livereload())
 });
