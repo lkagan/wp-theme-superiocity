@@ -67,4 +67,4 @@ if ( SUPERIOCITY_IS_MAIN_SITE ) {
 }
 
 // Disable Yoast SEO structured data
-add_filter( 'wpseo_json_ld_output', '__return_false' );
+//add_filter( 'wpseo_json_ld_output', '__return_false' );
