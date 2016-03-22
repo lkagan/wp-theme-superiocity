@@ -28,9 +28,8 @@ gulp.task('styles', function () {
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer('last 2 version'))
         .pipe(minifycss())
-        .pipe(sourcemaps.write('./', {includeContent: false, sourceRoot: '/src/sass'}))
+        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('.'))
-        .pipe(livereload())
 });
 
 // Process JS files
@@ -39,8 +38,8 @@ gulp.task('scripts', function () {
         .pipe(sourcemaps.init())
         .pipe(concat('main.js'))
         .pipe(rename({suffix: '.min'}))
-        //.pipe(uglify())
-        //.pipe(sourcemaps.write())
+        .pipe(uglify())
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('./javascript'))
         .pipe(livereload())
 });
@@ -59,9 +58,9 @@ gulp.task('watch', function () {
     gulp.watch(jsPath + '/**/*', ['scripts']);
     gulp.watch(imgPath + '/**/*', ['images']);
     livereload.listen();
-    gulp.watch(['./javascript/**/*', './**/*.php', 'style.css']).on('change', livereload.changed);
+    gulp.watch(['./javascript/**/*', './images/*', './**/*.php', 'style.css']).on('change', livereload.changed);
 });
 
 
 //  Create a default task
-gulp.task('default', ['watch', 'styles', 'scripts', 'images'], null);
+gulp.task('default', ['styles', 'scripts', 'images', 'watch'], null);
