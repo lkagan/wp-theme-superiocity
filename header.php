@@ -79,7 +79,7 @@
 						<h1 class="company-name">Superiocity</h1>
 			        <?php else: ?>
 				        <h2 class="company-name">Superiocity</h2>
-			        <?php endif; ?><span class="trademark">SM</span>
+			        <?php endif; ?><span class="trademark">&reg;</span>
 				        </a>
                     <h2 style="text-docoration: none !important;"><?php bloginfo( 'description' ) ?></h2>
 				</div>
@@ -93,7 +93,7 @@
             <div class="masthead">
                 <dl class="text">
                     <dt>[soo-peer-ee-os-i-tee]:</dt>
-                    <dd><em>noun</em>: The ability to provide superior web and mobile development services, on time and within budget.</dd>
+                    <dd><em>noun</em>: The ability to provide superior web development services on time and within budget.</dd>
                 </dl> 
                 <img class="larry" src="<?= bloginfo('template_url'); ?>/images/me2.png">
             </div><!-- .masthead -->
