@@ -788,6 +788,24 @@ pre {
   background: none;
 }
 
+.home #p-main-slider_3 .slider-content-wrapper .right-block .title {
+  color: #fff;
+}
+
+.portfolio-container .portelement_2 div.right-block .description-block_2 {
+  text-align: left;
+}
+
+#p-main-slider_3 .slider-content-wrapper .button-block a:hover, #p-main-slider_3 .slider-content-wrapper .button-block a,
+.portelement_2 div.right-block .button-block a:hover, .portelement_2 div.right-block .button-block a {
+  background-color:  #52b42d !important;
+  border-radius: 0 !important;
+}
+
+#huge_it_portfolio_content_2 #huge_it_portfolio_container_2 {
+  width: auto !important;
+}
+
 .portfolio .item img {
   box-shadow: 3px 3px 10px 3px #666;
   float: left;
