@@ -806,11 +806,40 @@ pre {
   width: auto !important;
 }
 
+.og-grid .og-details li {
+  display: list-item;
+  margin-left: 1.5em;
+}
+
+#huge_it_portfolio_content_3 ul.og-grid {
+  overflow: hidden;
+}
+
+#huge_it_portfolio_content_2 .og-expander .elastislide-wrapper,
+#huge_it_portfolio_content_3 .og-expander .elastislide-wrapper,
+.featured-projects .infosep, .portfolio-container .infosep {
+  display: none;
+}
+
+.portfolio-container .og-details, .home .og-details {
+  padding-bottom: 5px;
+}
+
 .portfolio .item img {
   box-shadow: 3px 3px 10px 3px #666;
   float: left;
   margin-right: 20px;
   margin-bottom: 20px;
+}
+
+#huge_it_portfolio_container_3 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.portfolio-container, .featured-projects {
+  line-height: normal;
 }
 
 .portfolio .item img.collection {
