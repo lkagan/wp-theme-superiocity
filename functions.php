@@ -8,14 +8,9 @@ function enqueue_superiocity_scripts() {
 	if ( ! is_admin() ) {
 		if ( SUPERIOCITY_IS_MAIN_SITE ) {
 
-			wp_deregister_script( 'jquery' );
-			wp_register_script( 'jquery',
-				( '//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js' ),
-				false );
 			wp_register_script( 'superiocity-main',
 				get_bloginfo( 'template_url' ) . '/javascript/main.min.js', false,
 				'20150113', false );
-			wp_enqueue_script( 'jquery' );
 			wp_enqueue_script( 'superiocity-main' );
 		}
 
