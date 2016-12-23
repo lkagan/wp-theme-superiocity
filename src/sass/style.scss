@@ -895,7 +895,7 @@ a.group1:hover {
   min-height: 13em;
 }
 
-.box, #huge_it_portfolio_container_2 > div {
+.box  {
   display: block;
   padding: 1em;
   overflow: hidden;
@@ -909,6 +909,20 @@ a.group1:hover {
 }
 
 .element_2 div.left-block_2 .main-image-block_2 {
+}
+
+.portfolio-container #huge_it_portfolio_content_2 .og-grid > li, .featured-projects .og-grid > li {
+  margin: 10px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+}
+
+.portfolio-container #huge_it_portfolio_content_2 .og-grid > li.og-expanded, .featured-projects .og-grid > li {
+  box-shadow: none;
+}
+
+.featured-projects .og-grid {
+  display: flex;
+  justify-content: space-around;
 }
 
 .right-block {
@@ -948,6 +962,10 @@ a.group1:hover {
 @media screen and (max-width: 1050px) {
   .masthead .text {
     font-size: 2em;
+  }
+
+  .featured-projects .og-grid {
+    display: block;
   }
 }
 
