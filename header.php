@@ -91,11 +91,17 @@
         </header>
         <div class="contiguous">
             <div class="masthead">
+                <div class="video-bg">
+                    <video src="<?php echo get_template_directory_uri() ?>/bubbles.mp4" autoplay loop poster="<?php echo get_template_directory_uri() ?>/images/bubbles-poster.jpg">
+                        <source src="<?php echo get_template_directory_uri() ?>/bubbles.webm">
+                        <source src="<?php echo get_template_directory_uri() ?>/bubbles.mp4">
+                    </video>
+                </div>
                 <dl class="text">
                     <dt>[soo-peer-ee-os-i-tee]:</dt>
                     <dd><em>noun</em>: The ability to provide superior web development services on time and within budget.</dd>
                 </dl> 
-                <img class="larry" src="<?= bloginfo('template_url'); ?>/images/me2.png">
+                <img class="larry" src="<?= bloginfo('template_url'); ?>/images/me.png">
             </div><!-- .masthead -->
 	        <?php if( has_nav_menu( 'superiocity-main' ) ): ?>
             <nav class="menu-button">
