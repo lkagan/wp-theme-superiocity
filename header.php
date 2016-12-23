@@ -97,10 +97,10 @@
                         <source src="<?php echo get_template_directory_uri() ?>/bubbles.mp4">
                     </video>
                 </div>
-                <dl class="text">
-                    <dt>[soo-peer-ee-os-i-tee]:</dt>
-                    <dd><em>noun</em>: The ability to provide superior web development services on time and within budget.</dd>
-                </dl> 
+                <div class="text">
+					<div class="line1">Superior Websites</div>
+					<div class="line2">Get Superior Results</div>
+                </div>
                 <img class="larry" src="<?= bloginfo('template_url'); ?>/images/me.png">
             </div><!-- .masthead -->
 	        <?php if( has_nav_menu( 'superiocity-main' ) ): ?>
