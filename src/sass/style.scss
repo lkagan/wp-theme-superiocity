@@ -118,6 +118,7 @@ body {
   background: -moz-linear-gradient(to bottom, #171516, #3e3a39 300px, #3e3a39) no-repeat;
   background: linear-gradient(to bottom, #171516, #3e3a39 300px, #3e3a39) no-repeat;
   background-color: #3e3a39;
+  background-attachment: fixed;
   font-family: "Century Gothic", "CenturyGothic", Muli, verdana, sans-serif;
   letter-spacing: .03em;
   font-weight: normal;
@@ -238,8 +239,10 @@ header a h1 {
 }
 
 .masthead .text {
-  font-weight: bold;
-  background-color: rgba(0, 0, 0, .5);
+  font-size: 2.2em;
+  text-shadow: 3px 3px 3px rgba(0,0,0, .7);
+  font-variant: small-caps;
+  letter-spacing: .03em;
   padding: 15px;
   border-radius: 10px;
   position: absolute;
@@ -248,17 +251,10 @@ header a h1 {
   transform: translateY(-50%);
   left: 10%;
   color: #ccc;
-  width: 40%;
-  font-family: 'courier new', monospace;
 }
 
-.masthead .text dt {
-  white-space: nowrap;
-}
-
-.masthead .text dd {
-  font-size: .9em;
-  line-height: 1.3em;
+.masthead .text .line2 {
+  margin-left: 2em;
 }
 
 nav {
@@ -457,6 +453,11 @@ ul {
       flex-shrink: 0;
     }
   }
+}
+
+.service-list {
+  column-count: 2;
+  font-weight: bold;
 }
 
 .single, .blog {
@@ -944,9 +945,16 @@ a.group1:hover {
   }
 }
 
+@media screen and (max-width: 1050px) {
+  .masthead .text {
+    font-size: 2em;
+  }
+}
+
+
 @media screen and (max-width: 930px) {
   .masthead .text {
-    width: 35%;
+    font-size: 1.5em;
   }
 }
 
@@ -975,10 +983,16 @@ a.group1:hover {
   }
 
   .masthead .text {
-    position: inherit;
-    margin: 0 auto;
-    left: 0;
-    width: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    text-shadow: 3px 3px 5px rgba(0,0,0, .8);
+    font-size: 2em;
+    white-space: nowrap;
+  }
+
+  nav li a {
+    padding: .6em 2em;
   }
 
   #main-page-content {
@@ -1015,6 +1029,10 @@ a.group1:hover {
     display: block;
     border: none;
     border-top: solid 1px #444;
+  }
+
+  .service-list {
+    column-count: 1;
   }
 
   nav ul li a {
@@ -1240,6 +1258,10 @@ a.group1:hover {
   .entries .entry {
     display: block;
 
+    .masthead .text {
+      font-size: 1.2em;
+    }
+
     p {
       margin-left: 0;
     }
@@ -1257,5 +1279,12 @@ a.group1:hover {
 
   header .branding h2 {
     font-size: 8px;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .masthead .text {
+    font-size: 1.5em;
   }
 }
