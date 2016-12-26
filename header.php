@@ -2,7 +2,9 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>" />
-	<?php if (is_search()) { ?>
+    <meta name="format-detection" content="telephone=no">
+
+    <?php if (is_search()) { ?>
 	   <meta name="robots" content="noindex, nofollow" />
 	<?php } ?>
 
