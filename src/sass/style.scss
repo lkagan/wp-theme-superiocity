@@ -506,6 +506,7 @@ ul {
   font-weight: normal;
   letter-spacing: .08em;
   text-transform: none;
+  text-align: center;
 }
 
 .page-id-1313 .care-plans div {
@@ -696,6 +697,10 @@ h3 {
   margin-bottom: .3em;
 }
 
+.home h3 {
+  border-bottom: 1px #0074a2 solid;
+}
+
 h3 a:hover {
   text-decoration: none;
 }
@@ -768,7 +773,7 @@ h3 a:hover {
 }
 
 .slider-wrapper {
-  margin: 0 auto 3em auto;
+  margin: 3em auto 3em auto;
   width: 90%;
   height: 4em;
   position: relative;
