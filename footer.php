@@ -5,8 +5,7 @@
 				</div>
 	            <?php if ( SUPERIOCITY_IS_MAIN_SITE ) : ?>
 				<div class="nav">
-					<a href="/superiocity-media/" title="Superiocity Media">media</a>
-					| <a href="/sitemap/" title="sitemap">sitemap</a>
+					<a href="/sitemap/" title="sitemap">sitemap</a>
 				</div>
 	            <?php endif; ?>
             </footer>       

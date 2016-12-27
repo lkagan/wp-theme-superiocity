@@ -4,7 +4,6 @@
 		<h1><?php the_title(); ?></h1>
 	<?php endif; ?>
 	<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-		<?php include( TEMPLATEPATH . '/inc/meta.php' ); ?>
 		<div class="blog-container">
 			<article class="entry">
 				<?php if ( has_post_thumbnail() ): ?>

@@ -27,6 +27,7 @@ $heading-color2: #0074a2;
 
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *, *:before, *:after {
@@ -126,7 +127,7 @@ body {
 }
 
 .page, .post, .blog {
-  margin: 0 2.5%;
+  margin: 0 1.5rem;
   max-width: 1024px;
 }
 
@@ -209,7 +210,7 @@ header a h1 {
 }
 
 .contact .fa {
-  margin-right: 10px;
+  margin-right: .25em;
 }
 
 .contact .email {
@@ -293,6 +294,10 @@ nav li a {
   transition-property: all;
 }
 
+nav li a:hover {
+  text-decoration: none;
+}
+
 nav li:first-child {
   border-left: solid 1px #444;
 }
@@ -315,6 +320,10 @@ nav.menu-button {
 
 #menu-main-menu li {
   font-size: 16px;
+}
+
+.menu-main-menu-container {
+  box-shadow: 0 -2px 3px rgba(0,0,0,.3);
 }
 
 ul {
@@ -383,6 +392,11 @@ ul {
   }
 }
 
+.blog .main h1, .single .main h1 {
+  margin: 0 0 1em;
+
+}
+
 .main {
   background-color: #eee;
   padding: 2em 3em;
@@ -401,7 +415,7 @@ ul {
     margin: 0 -.5em .5em -.5em;
     line-height: 1.25em;
     color: $heading-color;
-    border-radius: 6px;
+    border-radius: .15em;
     font-weight: normal;
 
     a {
@@ -460,6 +474,142 @@ ul {
   font-weight: bold;
 }
 
+.wp-care-plans {
+  background-color: #0074a2;
+  color: #eee;
+  text-shadow: -1px -1px 2px rgba(0,0,0,.1);
+  height: 125px;
+  text-align: center;
+  max-width: 680px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 4em 0 4em 25px;
+}
+
+.wp-care-plans .inner {
+  font-size: 1.1em;
+  position: relative;
+  top: 50%;
+  transform: translate(-50px, -50%);
+}
+
+.wp-care-plans .button {
+  margin-top: .5em;
+}
+
+.page-id-1313 .care-plans {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-id-1313 .care-plans strong {
+  font-size: 1.1em;
+}
+
+.page-id-1313 .care-plans h3 {
+  font-weight: normal;
+  letter-spacing: .08em;
+  text-transform: none;
+  text-align: center;
+}
+
+.page-id-1313 .care-plans div {
+  padding: 0;
+  margin: 2em 0 0 ;
+  overflow: visible;;
+  position: relative;
+}
+
+.page-id-1313 .care-plans div.recommended {
+  margin: 0 1.5em;
+}
+
+.page-id-1313 .care-plans ul, .service-list {
+  margin: 1em 1em 2em 1em;
+  list-style: none;
+}
+
+.page-id-1313 .care-plans li, .service-list li {
+  margin-left: 1.5em;
+}
+
+.page-id-1313 .care-plans li:before, .service-list li:before {
+  font-family: FontAwesome;
+  content: '\f00c';
+  margin-left: -1.5em;
+  padding-right: .5em;
+  color: #0a0;
+}
+
+.page-id-1313 .care-plans li.off:before {
+  font-family: FontAwesome;
+  content: '\f00d';
+  margin-left: -1.5em;
+  padding-right: .5em;
+  color: #c00;
+}
+
+.page-id-1313 .care-plans .off {
+  color: #bbb;
+}
+
+.page-id-1313 .care-plans h3 {
+  background-color: #0074a2;
+  text-shadow: -1px -1px 2px rgba(0,0,0,.1);
+  color: #fff;
+  padding: .5em;
+}
+
+.page-id-1313 .care-plans .recommended h3 {
+  background-color: #00a000;
+}
+
+.page-id-1313 .care-plans .price {
+  position: absolute;
+  background-color: orange;
+  right: -.5em;
+  bottom: -1em;
+  padding: .5em;
+  border-radius: 50%;
+  text-shadow: -1px -1px 2px rgba(0,0,0,.1);
+  box-shadow: 2px 2px 4px rgba(0,0,0,.3);
+}
+
+ .wp-care-plans img {
+  float: left;
+  position: relative;
+  left: -50px;
+  top: -17px;
+}
+
+.page-id-1313 .call-to-action {
+  margin: 3em 0;
+  text-align: center;
+  background-color: #0074a2;
+  color: #fff;
+  text-shadow: -1px -1px 2px rgba(0,0,0,.1);
+  font-size: 1.5em;
+  padding: 1em;
+  line-height: 1.3em;
+}
+
+.page-id-1313 .tos {
+  margin-top: 2em;
+  font-size: .8em;
+  line-height: 1.3em;
+}
+
+.page-id-1313 .tos h5 {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.page-id-1313 .call-to-action .phone {
+  font-size: 1.3em;
+  margin-top: .75em;
+}
+
 .single, .blog {
   .featured-image {
     width: 100%;
@@ -506,7 +656,7 @@ h1 {
   color: $heading-color;
   font-weight: normal;
   padding: 1em;
-  border-radius: 8px;
+  border-radius: .15em;
   line-height: 1.5em;
   margin: 0 -1em 1em -1em;
   box-shadow: 0 1px 4px 0 rgba(0,0,0,.2);
@@ -550,6 +700,56 @@ h3 {
   text-transform: uppercase;
   color: $heading-color2;
   margin-bottom: .3em;
+}
+
+.featured-projects > h3 {
+  border-bottom: 1px #0074a2 solid;
+}
+
+.home .about {
+  background: url(images/web-design.jpg) no-repeat fixed center center ;
+  margin: 3em -1.5rem;
+  position: relative;
+}
+
+.home .about .content {
+  padding: 4em 3em;
+  color: #ddd;
+}
+
+.home .overlay {
+  background-color: rgba(0,0,0, .8);
+}
+
+
+.home .about ul {
+  columns: 2;
+  list-style: none;
+  margin: 2.5em 0 0 0;
+}
+
+
+.home .about ul li {
+  margin-left: 2em;
+}
+
+.home .about ul li:before {
+  font-family: FontAwesome;
+  content: '\f00c';
+  margin-left: -1.5em;
+  padding-right: .5em;
+  color: #0a0;
+}
+
+.home .cta {
+  font-size: 2em;
+  text-align: center;
+  line-height: 1.3em;
+  background-color: #0074a2;
+  padding: 1em;
+  margin: 3em -1.5rem -2rem -1.5rem;
+  color: #fff;
+  text-shadow: -1px -1px 2px rgba(0,0,0, .3);
 }
 
 h3 a:hover {
@@ -605,9 +805,9 @@ h3 a:hover {
   text-align: left;
 }
 
-.box.featured-projects {
-  margin-bottom: 2em;
-  width: 95%;
+.featured-projects {
+  margin: 2em 0 6em 0;
+  position: relative;
 }
 
 .box.featured-projects li {
@@ -624,7 +824,7 @@ h3 a:hover {
 }
 
 .slider-wrapper {
-  margin: 0 auto 3em auto;
+  margin: 3em auto 3em auto;
   width: 90%;
   height: 4em;
   position: relative;
@@ -690,15 +890,17 @@ textarea {
 }
 
 input[type=submit], a.button {
+  text-shadow: -1px -1px 2px rgba(0,0,0,.1);
+  display: inline-block;
   text-decoration: none;
   font-family: arial, sans-serif;
   font-size: 1.2em;
   color: #fff;
   background-color: $brand-color2;
-  padding: .5em;
-  border-radius: 5px;
+  padding: .5em .75em;
+  border-radius: .15em;
   border: 0;
-  box-shadow: 1px 1px 2px rgba(0,0,0, .5);
+  box-shadow: 2px 2px 4px rgba(0,0,0, .3);
   -webkit-appearance: none;
 
   &:hover {
@@ -819,6 +1021,7 @@ pre {
 
 #huge_it_portfolio_content_3 ul.og-grid {
   overflow: hidden;
+  margin: 0;
 }
 
 #huge_it_portfolio_content_2 .og-expander .elastislide-wrapper,
@@ -888,28 +1091,119 @@ a.group1:hover {
   align-content: space-between;
   align-items: stretch;
   flex-wrap: wrap;
+  margin-top: 4em;
 }
 
 .main-points .box {
   width: 30%;
   min-height: 13em;
+  position: relative;
+  overflow: visible;
+  padding-top: 40px;
 }
 
-.box, #huge_it_portfolio_container_2 > div {
-  display: block;
+.main-points i {
+  font-size: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -120%);
+  border-radius: 50%;
+  padding: .4em;
+  color: rgb(249,249,249);
+  background-color: #0074a2;
+  box-shadow: 2px 2px 2px rgba(0,0,0, .2);
+}
+
+.quote-wrapper {
+  position: relative;
+}
+
+.box, .home .quotes li  {
   padding: 1em;
   overflow: hidden;
   border: 1px solid #ccc;
   background: #f9f9f9;
   margin: 1em auto;
   vertical-align: top;
-  border-radius: 8px;
+  border-radius: .15em;
   min-height: 0;
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,.2);
 }
 
-.element_2 div.left-block_2 .main-image-block_2 {
+.home .quotes  {
+  display: flex;
+  flex: 0 1 auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
 }
+
+.home .quotes li {
+  opacity: .2;
+  transform: scale(.7);
+  transition: all .75s;
+}
+
+.home .quotes li.animate {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.home .button {
+  position: absolute;
+  right: 2em;
+  bottom: -4em;
+  font-size: .85rem;
+  padding: .5rem .75rem;
+}
+
+.home .featured-projects .button {
+  margin-top: 2em;
+}
+
+.home  .quotes li {
+  width: 45%;
+  display: inline-block;
+  font-size: .85em;
+  line-height: 1.3em;
+  position: relative;
+  overflow: visible;
+  margin: 30px 2%;
+  border: solid 2px #0074a2;
+  border-radius: .15em;
+  box-shadow: 2px 2px 4px rgba(0,0,0, .2);
+}
+
+.home .quotes img {
+  border-radius: 50%;
+  border: solid 2px #0074a2;
+  box-shadow: 2px 2px 2px rgba(0,0,0, .3);
+  position: absolute;
+  transform: translate(-30%, -30%);
+}
+
+.home .quotes .quote {
+  font-style: italic;
+  margin-left: 85px;
+  margin-bottom: 1em;
+}
+
+.home  .quotes .name, .home .quotes .company {
+  text-align: right;
+}
+
+.portfolio-container #huge_it_portfolio_content_2 .og-grid > li, .featured-projects .og-grid > li {
+  margin: 10px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+}
+
+.portfolio-container #huge_it_portfolio_content_2 .og-grid > li.og-expanded, .featured-projects .og-grid > li {
+  box-shadow: none;
+}
+
+.home #huge_it_portfolio_content_3 .og-grid > li {
+  margin: 10px;
+}
+
 
 .right-block {
   padding-left: 2em;
@@ -949,6 +1243,22 @@ a.group1:hover {
   .masthead .text {
     font-size: 2em;
   }
+
+  .featured-projects .og-grid {
+    display: block;
+  }
+
+  .page-id-1313 .care-plans {
+    display: block;
+  }
+
+  .page-id-1313 .care-plans div, .page-id-1313 .care-plans div.recommended {
+    margin: 3em 0;
+  }
+
+  .page-id-1313 .care-plans div ul {
+    columns: 2;
+  }
 }
 
 
@@ -961,6 +1271,14 @@ a.group1:hover {
 @media screen and (max-width: 820px) {
   .blog-container {
     display: block;
+  }
+
+  .main-points {
+    margin-top: 0;
+  }
+
+  .main-points .box {
+    margin-top: 4em;
   }
 
   .blog, .single {
@@ -1022,9 +1340,22 @@ a.group1:hover {
     min-height: 0;
     margin-bottom: 1em;
   }
+
+  .home .quotes {
+    display: block;
+    overflow: visible;
+  }
+
+  .home .quotes li {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 775px) {
+  .main {
+    padding: 2em 1em;
+  }
+
   nav ul li, nav ul li:first-child {
     display: block;
     border: none;
@@ -1171,6 +1502,10 @@ a.group1:hover {
     display: none;
   }
 
+  .contact .phone {
+    margin-left: -1em;
+  }
+
   .contact {
     left: 0;
     float: left;
@@ -1187,7 +1522,7 @@ a.group1:hover {
     margin-bottom: 0;
   }
 
-  .page {
+  .page, .blog {
     margin: 0;
   }
 
@@ -1252,6 +1587,14 @@ a.group1:hover {
       display: none;
     }
   }
+
+  .home .about ul {
+    columns: 1;
+  }
+
+  .home .about .content {
+    padding: 4em 1em;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -1278,13 +1621,61 @@ a.group1:hover {
   }
 
   header .branding h2 {
-    font-size: 8px;
+    font-size: 9px;
+  }
+
+
+  .wp-care-plans {
+    position: relative;
+    height: auto;
+    padding: 40px 1em 1em 1em;
+    margin: 8em 0 4em 0;
+  }
+
+  .wp-care-plans .inner {
+    position: relative;
+    transform: none;
+    margin-top: 1em;
+  }
+
+  .wp-care-plans img {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .page-id-1313 .care-plans div ul {
+    columns: 1;
   }
 }
 
 
 @media screen and (max-width: 400px) {
   .masthead .text {
+    font-size: 1.5em;
+  }
+
+  .page-id-1313 .call-to-action .phone {
+    font-size: .85em;
+  }
+
+  .home .quotes img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+  }
+
+  .home .quotes .quote {
+    margin-left: 0;
+    margin-top: 65px;
+  }
+
+  .home .quotes li {
+    margin: 30px 0;
+  }
+
+  .home .cta {
     font-size: 1.5em;
   }
 }
