@@ -1,18 +1,6 @@
 
 jQuery(document).ready(function($) {
 
-    function initSlider() {
-        var testimonials = document.querySelectorAll('.slider-wrapper li');
-        var current = 0;
-        $(testimonials[current]).addClass('visible');
-
-        window.setInterval(function() {
-            $(testimonials[current]).removeClass('visible');
-            current = current == testimonials.length  - 1 ? 0 : current + 1;
-            $(testimonials[current]).addClass('visible');
-        }, 8000);
-    }
-
     $('#menu-button').mouseup(function(e) {
         e.preventDefault();
         $('.menu-main-menu-container').toggle(400);
@@ -21,21 +9,70 @@ jQuery(document).ready(function($) {
     // Minor portfolio plugin tweaks.
     $('.main-image-block_2 a, .image-block_3 a').click(function(e) { e.preventDefault(); return false; });
     $('.right-block .button-block a').html('View Site');
-
-    initSlider();
 });
 
 
-window.addEventListener('DOMContentLoaded', function() {
-    var listToggle = document.querySelector('.hide-toggle');
+document.addEventListener('DOMContentLoaded', function() {
 
-    if(listToggle === null) {
-        return;
-    }
+    // iOS-specific functionality.
+    (function() {
+        // Get a flag telling us if this is an iOS device.
+        var iOS = /iPad|iPhone|iPod|CriOS/.test(navigator.userAgent) && !window.MSStream;
 
-    listToggle.onclick = function() {
-        document.cookie = 'hideSubscribeForm=1; path=/';
-        document.querySelector('.list-subscribe').style.display = 'none';
-    }
+        // Change fixed background to scroll.
+        if (iOS) {
+            var fixedBgElements = document.getElementsByClassName('fixed-bg');
+
+            if (fixedBgElements != undefined) {
+                for (var i = 0; i < fixedBgElements.length; ++i) {
+                    fixedBgElements[i].style.backgroundAttachment = 'scroll';
+                }
+            }
+        }
+    })();
 });
 
+
+document.addEventListener( 'scroll', animateItems );
+
+
+/**
+ * Check if an element is within the window viewport.
+ */
+function inViewport(element, padding)
+{
+    if(element == undefined) {
+        return false;
+    }
+
+    padding = padding || 0;
+    var boundingBox = element.getBoundingClientRect();
+    var windowHeight = document.documentElement.clientHeight;
+    var topLimit = padding;
+    var bottomLimit = windowHeight - padding;
+
+    if ( ( boundingBox.top > topLimit || boundingBox.bottom > topLimit ) &&
+        ( boundingBox.top < bottomLimit || boundingBox.bottom < bottomLimit ) ) {
+        return true;
+    }
+
+}
+
+/**
+ * Animate items in viewport.
+ */
+function animateItems()
+{
+    var quotes = document.querySelectorAll('.home .quotes li');
+
+    // Animate the services links
+    if (quotes) {
+        for (var i = 0; i < quotes.length; ++i) {
+            if ( inViewport( quotes[i], 20 ) ) {
+                quotes[i].classList.add('animate');
+            } else {
+                quotes[i].classList.remove('animate');
+            }
+        }
+    }
+}
