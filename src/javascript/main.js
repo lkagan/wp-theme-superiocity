@@ -64,14 +64,26 @@ function inViewport(element, padding)
 function animateItems()
 {
     var quotes = document.querySelectorAll('.home .quotes li');
+    var logos = document.querySelectorAll('.home .logos li');
 
-    // Animate the services links
+    // Animate the quotes
     if (quotes) {
         for (var i = 0; i < quotes.length; ++i) {
             if ( inViewport( quotes[i] ) ) {
                 quotes[i].classList.add('animate');
             } else {
                 quotes[i].classList.remove('animate');
+            }
+        }
+    }
+
+    // Animate the logos
+    if (logos) {
+        for (var i = 0; i < logos.length; ++i) {
+            if ( inViewport( logos[i] ) ) {
+                logos[i].classList.add('animate');
+            } else {
+                logos[i].classList.remove('animate');
             }
         }
     }
