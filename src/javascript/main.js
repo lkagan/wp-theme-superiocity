@@ -68,7 +68,7 @@ function animateItems()
     // Animate the services links
     if (quotes) {
         for (var i = 0; i < quotes.length; ++i) {
-            if ( inViewport( quotes[i], 20 ) ) {
+            if ( inViewport( quotes[i] ) ) {
                 quotes[i].classList.add('animate');
             } else {
                 quotes[i].classList.remove('animate');
