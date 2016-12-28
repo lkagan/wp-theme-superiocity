@@ -70,7 +70,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class( is_front_page() ? 'home' : 'inner' ); ?>>
     <div class="page">
         <header class="clearfix">
 	        <div class="branding">
