@@ -427,7 +427,7 @@ ul {
       text-decoration: none;
       color: $brand-color1;
       &:hover {
-        text-decoration: underline;
+        text-decoration: none;
       }
     }
   }
@@ -445,6 +445,10 @@ ul {
   display: flex;
   justify-content: space-between;
   margin-top: 2em;
+}
+
+.blog h2 {
+  border-bottom: solid 1px $brand-color1;
 }
 
 .entry, .entries {
@@ -1202,7 +1206,7 @@ a.group1:hover {
   position: relative;
   overflow: visible;
   margin: 30px 2%;
-  border: solid 2px $brand-color1;
+  border: solid 1px $brand-color1;
   border-radius: .15em;
   box-shadow: 2px 2px 4px rgba(0,0,0, .2);
 }
@@ -1229,7 +1233,7 @@ a.group1:hover {
 
 .page-id-11 .quote {
   margin-bottom: 4em;
-  border: solid 2px $brand-color1;
+  border: solid 1px $brand-color1;
   border-radius: .15em;
   box-shadow: 2px 2px 4px rgba(0,0,0, .2);
 }
@@ -1248,6 +1252,10 @@ a.group1:hover {
 .portfolio-container #huge_it_portfolio_content_2 .og-grid > li, .featured-projects .og-grid > li {
   margin: 10px;
   box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+}
+
+.home #huge_it_portfolio_content_3 .og-grid > li > a {
+  box-shadow: 2px 2px 4px rgba(0,0,0,.2);
 }
 
 #huge_it_portfolio_content_2 ul.og-grid {
