@@ -447,8 +447,12 @@ ul {
   margin-top: 2em;
 }
 
-.blog h2 {
+.blog .main h2 {
   border-bottom: solid 1px $brand-color1;
+}
+
+.widget_recent_entries li {
+  margin-left: 0;
 }
 
 .entry, .entries {
@@ -481,6 +485,10 @@ ul {
 .service-list {
   column-count: 2;
   font-weight: bold;
+}
+
+.page-id-7 .wp-care-plans {
+  margin-top: 4em;
 }
 
 .wp-care-plans {
@@ -533,12 +541,12 @@ ul {
 
 .page-id-1313 .care-plans div.recommended {
   box-shadow: 8px 8px 30px 10px rgba(0,0,0,.2);
-  margin: 0 1em;
+  margin: 0 1em 1.5em 0;
   z-index:10;
 }
 
 .page-id-1313 .care-plans ul, .service-list {
-  margin: 1em 1.5em 2em;
+  margin: 1em 2.5em 2em;
   list-style: none;
 }
 
@@ -577,18 +585,14 @@ ul {
   background-color: #00a000;
 }
 
-.page-id-1313 .care-plans .recommended .price {
-  box-shadow: 8px 8px 30px 10px rgba(0,0,0,.2)
-}
-
 .page-id-1313 .care-plans .price {
   padding: 0;
   position: absolute;
   background-color: orange;
   right: -.5em;
-  bottom: -1em;
+  bottom: 0;
   text-shadow: -1px -1px 2px rgba(0,0,0,.1);
-  box-shadow: 2px 2px 4px rgba(0,0,0,.3);
+  box-shadow: none;
   line-height: 2em;
   width: 100%;
   border-radius: 0;
@@ -1334,6 +1338,8 @@ a.group1:hover {
     padding: .5em;
     right: -1em;
     left: auto;
+    bottom: -1em;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.3);
   }
 
   .page-id-1313 .care-plans div ul {
@@ -1366,6 +1372,10 @@ a.group1:hover {
       width: 100%;
       margin-left: 0;
     }
+  }
+
+  .widget_recent_entries li {
+    margin-left: 1em;
   }
 
   .larry {
@@ -1679,6 +1689,37 @@ a.group1:hover {
   }
 }
 
+@media screen and (max-width: 550px) {
+  .wp-care-plans {
+    position: relative;
+    height: auto;
+    padding: 40px 1em 1em 1em;
+    margin: 8em 0 4em 0;
+  }
+
+  .page-id-7 .wp-care-plans {
+    margin: 8em 0 4em 0;
+  }
+
+  .wp-care-plans .inner {
+    position: relative;
+    transform: none;
+    margin-top: 1em;
+  }
+
+  .wp-care-plans img {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .page-id-1313 .care-plans div ul {
+    columns: 1;
+  }
+}
+
+
 @media screen and (max-width: 500px) {
   .entries .entry {
     display: block;
@@ -1706,29 +1747,6 @@ a.group1:hover {
     transform: translateX(-60%);
   }
 
-  .wp-care-plans {
-    position: relative;
-    height: auto;
-    padding: 40px 1em 1em 1em;
-    margin: 8em 0 4em 0;
-  }
-
-  .wp-care-plans .inner {
-    position: relative;
-    transform: none;
-    margin-top: 1em;
-  }
-
-  .wp-care-plans img {
-    position: absolute;
-    top: -100px;
-    left: 50%;
-    transform: translate(-50%, 0);
-  }
-
-  .page-id-1313 .care-plans div ul {
-    columns: 1;
-  }
 }
 
 
