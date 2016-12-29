@@ -427,7 +427,7 @@ ul {
       text-decoration: none;
       color: $brand-color1;
       &:hover {
-        text-decoration: underline;
+        text-decoration: none;
       }
     }
   }
@@ -445,6 +445,10 @@ ul {
   display: flex;
   justify-content: space-between;
   margin-top: 2em;
+}
+
+.blog h2 {
+  border-bottom: solid 1px $brand-color1;
 }
 
 .entry, .entries {
@@ -489,7 +493,7 @@ ul {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  margin: 4em 0 4em 25px;
+  margin: 2em 0 4em 25px;
 }
 
 .wp-care-plans .inner {
@@ -520,18 +524,21 @@ ul {
 }
 
 .page-id-1313 .care-plans div {
-  padding: 0;
-  margin: 2em 0 0 ;
+  box-shadow: 1px 1px 4px 2px rgba(0,0,0,.1);
+  padding: 0 0 1em;
+  margin: 2em -2em 0 ;
   overflow: visible;;
   position: relative;
 }
 
 .page-id-1313 .care-plans div.recommended {
-  margin: 0 1.5em;
+  box-shadow: 8px 8px 30px 10px rgba(0,0,0,.2);
+  margin: 0 1em;
+  z-index:10;
 }
 
 .page-id-1313 .care-plans ul, .service-list {
-  margin: 1em 1em 2em 1em;
+  margin: 1em 1.5em 2em;
   list-style: none;
 }
 
@@ -570,16 +577,25 @@ ul {
   background-color: #00a000;
 }
 
+.page-id-1313 .care-plans .recommended .price {
+  box-shadow: 8px 8px 30px 10px rgba(0,0,0,.2)
+}
+
 .page-id-1313 .care-plans .price {
+  padding: 0;
   position: absolute;
   background-color: orange;
   right: -.5em;
   bottom: -1em;
-  padding: .5em;
-  border-radius: 50%;
   text-shadow: -1px -1px 2px rgba(0,0,0,.1);
   box-shadow: 2px 2px 4px rgba(0,0,0,.3);
+  line-height: 2em;
+  width: 100%;
+  border-radius: 0;
+  left: 0;
 }
+
+
 
  .wp-care-plans img {
   float: left;
@@ -796,10 +812,6 @@ h3 a:hover {
 }
 
 .box.pricing {
-  p::first-letter {
-    font-size: 1em;
-  }
-
   p {
     margin-bottom: .5em;
   }
@@ -1143,7 +1155,6 @@ a.group1:hover {
 .box, .home .quotes li  {
   padding: 1em;
   overflow: hidden;
-  border: 1px solid #ccc;
   background: #f9f9f9;
   margin: 1em auto;
   vertical-align: top;
@@ -1195,7 +1206,7 @@ a.group1:hover {
   position: relative;
   overflow: visible;
   margin: 30px 2%;
-  border: solid 2px $brand-color1;
+  border: solid 1px $brand-color1;
   border-radius: .15em;
   box-shadow: 2px 2px 4px rgba(0,0,0, .2);
 }
@@ -1222,7 +1233,7 @@ a.group1:hover {
 
 .page-id-11 .quote {
   margin-bottom: 4em;
-  border: solid 2px $brand-color1;
+  border: solid 1px $brand-color1;
   border-radius: .15em;
   box-shadow: 2px 2px 4px rgba(0,0,0, .2);
 }
@@ -1241,6 +1252,10 @@ a.group1:hover {
 .portfolio-container #huge_it_portfolio_content_2 .og-grid > li, .featured-projects .og-grid > li {
   margin: 10px;
   box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+}
+
+.home #huge_it_portfolio_content_3 .og-grid > li > a {
+  box-shadow: 2px 2px 4px rgba(0,0,0,.2);
 }
 
 #huge_it_portfolio_content_2 ul.og-grid {
@@ -1304,7 +1319,21 @@ a.group1:hover {
   }
 
   .page-id-1313 .care-plans div, .page-id-1313 .care-plans div.recommended {
+    box-shadow: 1px 1px 4px 2px rgba(0,0,0,.1);
     margin: 3em 0;
+  }
+
+
+  .page-id-1313 .care-plans div.recommended .price {
+    box-shadow: 2px 2px 4px rgba(0,0,0,.3);
+  }
+
+  .page-id-1313 .care-plans .price {
+    width: 8em;
+    border-radius: 50%;
+    padding: .5em;
+    right: -1em;
+    left: auto;
   }
 
   .page-id-1313 .care-plans div ul {
