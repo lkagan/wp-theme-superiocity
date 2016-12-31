@@ -121,15 +121,15 @@ body {
   min-height: 100%;
 }
 
-.page, .post, .blog {
-  margin: 0 1.5rem;
-  max-width: 1024px;
+.page, .post, .blog, .single {
+  margin: 0 2rem;
 }
 
 header {
   position: relative;
-  margin: 20px 0;
+  margin: 20px auto;
   color: #eee;
+  max-width: 1024px;
 }
 
 header .company-name {
@@ -221,22 +221,37 @@ header a h1 {
 }
 
 .masthead {
-  height: 200px;
+  height: 300px;
   border-top: solid 3px #30920b;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
   position: relative;
   box-shadow: 0 0 4px rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,.5);
+}
+
+.masthead .wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
 }
 
 video::-webkit-media-controls-start-playback-button {
   display: none !important;
 }
 
+.video-bg video {
+  min-width: 100%;
+  min-height: 100%;
+
+}
+
 .video-bg {
   position: absolute;
   z-index: -1;
-  max-width:100%;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -244,6 +259,7 @@ video::-webkit-media-controls-start-playback-button {
   margin-top: -78px;
   position: absolute;
   right: 8em;
+  bottom: 0;
 }
 
 .masthead .text {
@@ -443,7 +459,7 @@ ul {
 
 .blog-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 2em;
 }
 
@@ -455,8 +471,9 @@ ul {
   margin-left: 0;
 }
 
-.entry, .entries {
+.single-post .entry, .entries {
   flex-shrink: 1;
+  max-width: 1400px;
 }
 
 .entries {
@@ -483,6 +500,7 @@ ul {
 }
 
 .service-list {
+  text-align: left;
   column-count: 2;
   font-weight: bold;
 }
@@ -517,7 +535,7 @@ ul {
 
 .page-id-1313 .care-plans {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .page-id-1313 .care-plans strong {
@@ -548,6 +566,7 @@ ul {
 .page-id-1313 .care-plans ul, .service-list {
   margin: 1em 2.5em 2em;
   list-style: none;
+  display: inline-block;
 }
 
 .page-id-1313 .care-plans li, .service-list li {
@@ -730,31 +749,44 @@ h3 {
   padding-top: 0;
 }
 
+.single .main h1 {
+  text-align: left;
+}
+
 .home .about {
   background: url(images/web-design.jpg) no-repeat fixed center center ;
-  margin: 3em -1.5rem;
+  margin: 3em -2rem;
   position: relative;
+  background-size: cover;
 }
 
 .home .about .content {
   padding: 4em 3em;
   color: #ddd;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .home .overlay {
   background-color: rgba(0,0,0, .8);
 }
 
+.feature-list-wrapper {
+  text-align: center;
+}
 
 .home .about ul {
+  text-align: left;
   columns: 2;
   list-style: none;
-  margin: 2.5em 0 0 0;
+  margin: 2.5em auto 0 auto;
+  display: inline-block;
 }
 
 
 .home .about ul li {
   margin-left: 2em;
+  break-inside: avoid;
 }
 
 .home .about ul li:before {
@@ -771,7 +803,7 @@ h3 {
   line-height: 1.3em;
   background-color: $brand-color1;
   padding: 1em;
-  margin: 3em -1.5rem 1.5em -1.5rem;
+  margin: 3em -2rem 1.5em -2rem;
   color: #fff;
   text-shadow: -1px -1px 2px rgba(0,0,0, .3);
 }
@@ -1304,8 +1336,20 @@ a.group1:hover {
 }
 
 @media screen and (min-width: 1075px) {
-  .page, .blog {
-    margin: 0 auto;
+  header {
+    max-width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 1800px) {
+
+  .branding {
+    margin-left: 10%;
+  }
+
+  .contact {
+    margin-right: 10%;
   }
 }
 
@@ -1344,6 +1388,10 @@ a.group1:hover {
 
   .page-id-1313 .care-plans div ul {
     columns: 2;
+  }
+
+  .page-id-1313 .care-plans div ul li {
+    break-inside: avoid;
   }
 }
 
@@ -1772,6 +1820,10 @@ a.group1:hover {
 
   .home .quotes li {
     margin: 30px 0;
+  }
+
+  .home .quotes li:first-child {
+    margin-top: 60px;
   }
 
   .home .cta {
