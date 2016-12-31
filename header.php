@@ -99,11 +99,13 @@
                         <source src="<?php echo get_template_directory_uri() ?>/bubbles.mp4">
                     </video>
                 </div>
-                <div class="text">
-					<div class="line1">Superior Websites</div>
-					<div class="line2">Get Superior Results</div>
+                <div class="wrapper">
+					<div class="text">
+						<div class="line1">Superior Websites</div>
+						<div class="line2">Get Superior Results</div>
+					</div>
+					<img class="larry" src="<?= bloginfo('template_url'); ?>/images/me.png">
                 </div>
-                <img class="larry" src="<?= bloginfo('template_url'); ?>/images/me.png">
             </div><!-- .masthead -->
 	        <?php if( has_nav_menu( 'superiocity-main' ) ): ?>
             <nav class="menu-button">
