@@ -16,10 +16,7 @@ function enqueue_superiocity_scripts() {
 		wp_register_style( 'font-awesome',
 			'//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css',
 			false );
-		wp_register_style( 'google-fonts',
-			'//fonts.googleapis.com/css?family=Muli', false );
 		wp_enqueue_style( 'font-awesome' );
-		wp_enqueue_style( 'google-fonts' );
 	}
 }
 
