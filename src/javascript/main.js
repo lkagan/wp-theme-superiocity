@@ -1,25 +1,12 @@
+(function () {
+    'use strict';
 
-jQuery(document).ready(function($) {
+    // Get a flag telling us if this is an iOS device.
+    var iOS = /iPad|iPhone|iPod|CriOS/.test(navigator.userAgent) && !window.MSStream;
 
-    $('#menu-button').mouseup(function(e) {
-        e.preventDefault();
-        $('.menu-main-menu-container').toggle(400);
-    });
+    window.addEventListener('DOMContentLoaded', function () {
 
-    // Minor portfolio plugin tweaks.
-    $('.main-image-block_2 a, .image-block_3 a').click(function(e) { e.preventDefault(); return false; });
-    $('.right-block .button-block a').html('View Site');
-});
-
-
-document.addEventListener('DOMContentLoaded', function() {
-
-    // iOS-specific functionality.
-    (function() {
-        // Get a flag telling us if this is an iOS device.
-        var iOS = /iPad|iPhone|iPod|CriOS/.test(navigator.userAgent) && !window.MSStream;
-
-        // Change fixed background to scroll.
+        // Change fixed background to scroll for iOS.
         if (iOS) {
             var fixedBgElements = document.getElementsByClassName('fixed-bg');
 
@@ -29,11 +16,29 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         }
-    })();
-});
+
+        // Small screen menu open
+        document.getElementsByClassName('menu-open')[0]
+            .addEventListener('click', function(e) {
+                document.getElementsByClassName('main-nav-wrapper')[0].classList.add('open');
+            });
 
 
-document.addEventListener( 'scroll', animateItems );
+        // Small screen menu close
+        document.getElementsByClassName('menu-close')[0]
+            .addEventListener('click', function(e) {
+                e.preventDefault();
+                document.getElementsByClassName('main-nav-wrapper')[0].classList.remove('open');
+            });
+    });
+
+    document.addEventListener( 'click', closeMenu);
+    document.addEventListener( 'touchstart', closeMenu);
+    document.addEventListener( 'scroll', animateItems );
+})();
+
+
+
 
 
 /**
@@ -65,6 +70,7 @@ function animateItems()
 {
     var quotes = document.querySelectorAll('.home .quotes li');
     var logos = document.querySelectorAll('.home .logos li');
+    var bestFors = document.querySelectorAll('.care-plans .best-for');
 
     // Animate the quotes
     if (quotes) {
@@ -73,6 +79,16 @@ function animateItems()
                 quotes[i].classList.add('animate');
             } else {
                 quotes[i].classList.remove('animate');
+            }
+        }
+    }
+
+    if (bestFors) {
+        for (var i = 0; i < bestFors.length; ++i) {
+            if ( inViewport( bestFors[i] ) ) {
+                bestFors[i].classList.add('animate');
+            } else {
+                bestFors[i].classList.remove('animate');
             }
         }
     }
@@ -87,4 +103,48 @@ function animateItems()
             }
         }
     }
+}
+
+
+/**
+ *  Close the the main nav if clicking or tapping outside of the nav on small screens.
+ *
+ * @param event
+ * @returns {boolean}
+ */
+function closeMenu(event)
+{
+    var container = document.getElementsByClassName('main-nav-wrapper')[0];
+    var openButton = document.getElementById('menu-button');
+
+    if ( ! container ) {
+        return false;
+    }
+
+    if( event.target === container || event.target === openButton || isChild( event.target, container )) {
+        return false;
+    }
+
+    document.getElementsByClassName('main-nav-wrapper')[0].classList.remove('open');
+}
+
+
+/**
+ * Is the given node a child of the supplied parent?
+ *
+ * @param node
+ * @param parent
+ * @returns {boolean}
+ */
+function isChild(node, parent)
+{
+    while ( node.parentNode !== null ) {
+        if ( node === parent ) {
+            return true;
+        }
+
+        node = node.parentNode;
+    }
+
+    return false;
 }
