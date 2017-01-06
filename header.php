@@ -90,7 +90,7 @@
             </div>
 	        <?php if( has_nav_menu( 'superiocity-main' ) ): ?>
             <div class="menu-button menu-open">
-                <a href="#" id="menu-button"><i class="fa fa-bars"></i> Menu</a></li>
+                <a href="#" id="menu-button"><i class="fa fa-bars"></i> Menu</a>
             </div>
             <div class="main-nav-wrapper">
                 <a href="#" class="menu-close"><i class="fa fa-close"></i> close</a>
