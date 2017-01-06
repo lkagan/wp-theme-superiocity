@@ -216,6 +216,7 @@ video::-webkit-media-controls-start-playback-button {
 .video-bg video {
   min-width: 100%;
   min-height: 100%;
+  object-fit: cover;
 }
 
 .video-bg {
@@ -1305,12 +1306,8 @@ a.group1:hover {
 
 @media screen and (max-width: 1300px) {
 
-  .site-header {
-    font-size: .95em;
-  }
-
-  .branding {
-    font-size: .85em;
+  nav li a {
+    padding: .6em .75em;
   }
 }
 
@@ -1322,8 +1319,15 @@ a.group1:hover {
   .featured-projects .og-grid {
     display: block;
   }
-
 }
+
+
+@media screen and (max-width: 950px) {
+  .branding {
+    font-size: .85em;
+  }
+}
+
 
 @media screen and (max-width: 900px) {
 
