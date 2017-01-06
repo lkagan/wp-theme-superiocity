@@ -109,7 +109,7 @@ html {
 }
 
 body {
-  font-family: "Century Gothic", "CenturyGothic", Muli, verdana, sans-serif;
+  font-family: "Century Gothic", "CenturyGothic",  verdana, sans-serif;
   letter-spacing: .03em;
   font-weight: normal;
   min-height: 100%;
@@ -141,7 +141,7 @@ body {
   border: none;
   margin-bottom: 0;
   text-transform: uppercase;
-  letter-spacing: .3em;
+  letter-spacing: .26em;
 }
 
 .branding .first-line {
@@ -188,7 +188,7 @@ h2 {
  display: inline-block;
  vertical-align: top;
  margin-top: 5px;
- color: #ccc;
+ color: #666;
 }
 
 .masthead {
@@ -216,6 +216,7 @@ video::-webkit-media-controls-start-playback-button {
 .video-bg video {
   min-width: 100%;
   min-height: 100%;
+  object-fit: cover;
 }
 
 .video-bg {
@@ -224,7 +225,7 @@ video::-webkit-media-controls-start-playback-button {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: #010d29;
+  background-color: #00163b;
 }
 
 .inner .masthead .wrapper {
@@ -319,7 +320,8 @@ nav li a:visited,
 .site-header .company-name,
 .masthead .text .call-to-action a,
 .main-nav-wrapper .menu-close,
-.site-header h2 {
+.site-header h2,
+.site-header a {
   color: #ccc;
 }
 
@@ -327,8 +329,12 @@ nav li a:hover, nav li a:active, nav li.current_page_item a {
   border-top: solid 2px $brand-color1;
 }
 
-nav.menu-button {
+.menu-button {
   display: none;
+  flex-grow: 1;
+  text-align: right;
+  vertical-align: bottom;
+  line-height: 2.25em;
 }
 
 .main-nav-wrapper .menu-close {
@@ -723,7 +729,7 @@ h3 {
   text-align: center;
   background: none;
   color: $brand-color1;
-  padding-top: 0;
+  padding: 0 .5em;
 }
 
 .single .main h1 {
@@ -816,9 +822,14 @@ h3 {
   margin-left: 0;
 }
 
+.home .certs .logos img {
+  height:95px;
+  width: auto;
+}
+
 .home .certs li {
   list-style: none;
-  margin: 2em;
+  margin: 2em 1em;
   transform: scale(.7);
   opacity: .2;
   transition: all .75s;
@@ -1300,8 +1311,8 @@ a.group1:hover {
 
 @media screen and (max-width: 1300px) {
 
-  .site-header {
-    font-size: .85em;
+  nav li a {
+    padding: .6em .75em;
   }
 }
 
@@ -1313,8 +1324,15 @@ a.group1:hover {
   .featured-projects .og-grid {
     display: block;
   }
-
 }
+
+
+@media screen and (max-width: 950px) {
+  .branding {
+    font-size: .85em;
+  }
+}
+
 
 @media screen and (max-width: 900px) {
 
@@ -1418,7 +1436,7 @@ a.group1:hover {
     border-top: none;
   }
 
-  nav.menu-button {
+  .menu-button {
     display: block;
   }
 }
@@ -1800,7 +1818,7 @@ a.group1:hover {
   }
 
   .site-header h2 {
-    letter-spacing: .1em;
+    letter-spacing: .2em;
   }
 }
 
