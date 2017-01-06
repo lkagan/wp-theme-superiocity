@@ -192,7 +192,7 @@ h2 {
 }
 
 .masthead {
-  height: 80vh;
+  height: 100vh;
   position: relative;
   background-color: rgba(0,0,0,.4);
   box-shadow: inset 0 -16px 19px 0px rgba(0,0,0,.5);
@@ -237,7 +237,7 @@ video::-webkit-media-controls-start-playback-button {
   padding: 1em 1em 0;
   letter-spacing: .03em;
   position: absolute;
-  top: 50%;
+  top: 45%;
   transform: translateY(-50%);
   color: #ccc;
   width: 100%;
@@ -264,6 +264,18 @@ video::-webkit-media-controls-start-playback-button {
   margin-left: 2em;
 }
 
+.inner .masthead .fa-angle-down {
+  display: none;
+}
+
+.masthead .fa-angle-down {
+  font-size: 5em;
+  color: #ccc;
+  position: absolute;
+  bottom: .75em;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 nav {
   text-align: center;
@@ -1265,8 +1277,8 @@ a.group1:hover {
 
 @media screen and (min-width: 1800px) {
 
-  .branding {
-    margin-left: 10%;
+  .site-header {
+    padding: .75em 10% 1.5em;
   }
 
   .contact {
@@ -1290,6 +1302,10 @@ a.group1:hover {
     display: block;
   }
 
+}
+
+@media screen and (max-width: 900px) {
+
   .page-id-1313 .care-plans {
     display: block;
   }
@@ -1300,6 +1316,8 @@ a.group1:hover {
     top: 0;
     height: auto;
     background-color: #eee;
+    transform: translateY(0);
+    opacity: 1;
   }
 
   .care-plans .best-for .arrow-up {
@@ -1334,9 +1352,7 @@ a.group1:hover {
   .page-id-1313 .care-plans div ul li {
     break-inside: avoid;
   }
-}
 
-@media screen and (max-width: 900px) {
   nav ul li, nav ul li:first-child {
     display: block;
   }
@@ -1356,12 +1372,17 @@ a.group1:hover {
     transform: translateX(100%);
     transition: transform .3s;
     box-shadow: -4px 0 4px rgba(0,0,0,.5);
-    background-color: #222;
+    background-color: rgba(0,0,0, .85);
     position: fixed;
     top: 0;
     height: 100%;
     z-index: 500;
     overflow: scroll;
+    font-size: 1.5em;
+  }
+
+  .main-nav-wrapper a:hover {
+    text-decoration: none;
   }
 
   .main-nav-wrapper.open {
@@ -1759,5 +1780,15 @@ a.group1:hover {
 
   .home .cta {
     font-size: 1.5em;
+  }
+
+  .site-header h2 {
+    letter-spacing: .1em;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  .masthead .fa-angle-down {
+    display: none;
   }
 }

@@ -117,10 +117,11 @@
                             Call now for a free consultation
                             <div class="phone">
 								<?php if( function_exists( 'eeb_content' ) )  echo eeb_content('<a href="tel:5613361119"><i class="fa fa-phone"></i> (561) 336-1119</a>'); ?>
-                            </div>
-                        </div>
-					</div>
-                </div>
+                            </div><!-- .phone -->
+                        </div><!-- .call-to-action -->
+					</div><!-- .text -->
+                    <a href="#main" name="main"><i class="fa-angle-down fa"></i></a>
+                </div><!-- .wrapper -->
             </div><!-- .masthead -->
 			<?php endif; ?>
-            <div class="main clearfix">
+        <div class="main clearfix">
