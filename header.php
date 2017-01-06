@@ -89,11 +89,9 @@
                 <h2><?php bloginfo( 'description' ) ?></h2>
             </div>
 	        <?php if( has_nav_menu( 'superiocity-main' ) ): ?>
-            <nav class="menu-button menu-open">
-                <ul class="clearfix">
-                    <li><a href="#" id="menu-button"><i class="fa fa-bars"></i> Menu</a></li>
-                </ul>
-            </nav>
+            <div class="menu-button menu-open">
+                <a href="#" id="menu-button"><i class="fa fa-bars"></i> Menu</a></li>
+            </div>
             <div class="main-nav-wrapper">
                 <a href="#" class="menu-close"><i class="fa fa-close"></i> close</a>
 				<?php wp_nav_menu( array( 'container' => 'nav' )); ?>
