@@ -69,6 +69,7 @@ function animateItems()
     var quotes = document.querySelectorAll('.home .quotes li');
     var logos = document.querySelectorAll('.home .logos li');
     var bestFors = document.querySelectorAll('.care-plans .best-for');
+    var services = document.querySelectorAll('.home .about ul li');
 
     // Animate the quotes
     if (quotes) {
@@ -98,6 +99,17 @@ function animateItems()
                 logos[i].classList.add('animate');
             } else {
                 logos[i].classList.remove('animate');
+            }
+        }
+    }
+
+    // Animate the services
+    if (services) {
+        for (var i = 0; i < services.length; ++i) {
+            if ( inViewport( services[i] ) ) {
+                services[i].classList.add('animate');
+            } else {
+                services[i].classList.remove('animate');
             }
         }
     }

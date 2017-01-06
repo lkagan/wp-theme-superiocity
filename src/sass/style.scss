@@ -626,7 +626,7 @@ ul {
   text-align: center;
 }
 
-.page-id-1313 .call-to-action .phone {
+.page-id-1313 .main .call-to-action .phone {
   font-size: 1.3em;
 }
 
@@ -775,6 +775,15 @@ h3 {
 .home .about ul li {
   margin-left: 2em;
   break-inside: avoid;
+  opacity: 0;
+  transition: all .5s;
+  z-index: 20000;
+  transform: translateZ(0) translateX(-100%);
+}
+
+.home .about ul li.animate {
+  opacity: 1;
+  transform: translateZ(0) translateX(0);
 }
 
 .home .about ul li:before {
@@ -1744,6 +1753,7 @@ a.group1:hover {
 
   .home .main h2, .main h1  {
     font-size: 1.75em;
+    line-height: 1.3em;
   }
 
   .inner .main h2 {
