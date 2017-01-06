@@ -109,7 +109,7 @@ html {
 }
 
 body {
-  font-family: Muli, "Century Gothic", "CenturyGothic",  verdana, sans-serif;
+  font-family: "Century Gothic", "CenturyGothic",  verdana, sans-serif;
   letter-spacing: .03em;
   font-weight: normal;
   min-height: 100%;
@@ -1306,6 +1306,10 @@ a.group1:hover {
 @media screen and (max-width: 1300px) {
 
   .site-header {
+    font-size: .95em;
+  }
+
+  .branding {
     font-size: .85em;
   }
 }
