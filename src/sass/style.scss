@@ -124,7 +124,7 @@ body {
   color: #eee;
   width: 100%;
   z-index: 100;
-  background: linear-gradient(to bottom, #000, rgba(0,0,0, .7) 60%, transparent);
+  background: linear-gradient(to bottom, rgb(0,0,0), rgba(0,0,0, .7) 60%, transparent);
 }
 
 .site-header .logo {
@@ -142,6 +142,11 @@ body {
   margin-bottom: 0;
   text-transform: uppercase;
   letter-spacing: .26em;
+}
+
+.branding {
+  margin-left: .5em;
+  margin-top: .25em;
 }
 
 .branding .first-line {
@@ -194,7 +199,7 @@ h2 {
 .masthead {
   height: 100vh;
   position: relative;
-  background-color: rgba(0,0,0,.4);
+  background-color: rgba(0,00,17,.9);
   box-shadow: inset 0 -16px 19px 0px rgba(0,0,0,.5);
 }
 
@@ -217,15 +222,14 @@ video::-webkit-media-controls-start-playback-button {
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
+  position: fixed;
+  z-index: -1;
+  background-color: #00163b;
+  right: 0;
 }
 
 .video-bg {
-  position: fixed;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
   overflow: hidden;
-  background-color: #00163b;
 }
 
 .inner .masthead .wrapper {
@@ -323,6 +327,7 @@ nav li a:visited,
 .site-header h2,
 .site-header a {
   color: #ccc;
+  text-decoration: none;
 }
 
 nav li a:hover, nav li a:active, nav li.current_page_item a {
@@ -686,7 +691,7 @@ h1 {
   font-size: .8em;
   color: #ccc;
   line-height: 1.8em;
-  background-color: #252525;
+  background-color: #222;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -762,7 +767,7 @@ h3 {
 }
 
 .home .overlay {
-  background-color: rgba(0,0,0, .8);
+  background-color: rgba(0,0,0,.85);
 }
 
 .feature-list-wrapper {
@@ -773,7 +778,7 @@ h3 {
   text-align: left;
   columns: 2;
   list-style: none;
-  margin: 2.5em auto 0 auto;
+  margin: .5em auto 0 auto;
   display: inline-block;
 }
 
@@ -807,6 +812,7 @@ h3 {
   padding: 1em;
   color: #fff;
   text-shadow: -1px -1px 2px rgba(0,0,0, .3);
+  background-color: rgba(0,0,17,.7);
 }
 
 .certs {
@@ -1402,13 +1408,13 @@ a.group1:hover {
     transform: translateX(100%);
     transition: transform .3s;
     box-shadow: -4px 0 4px rgba(0,0,0,.5);
-    background-color: rgba(0,0,0, .85);
+    background-color: rgba(0,0,0, 1);
     position: fixed;
     top: 0;
     height: 100%;
     z-index: 500;
     overflow: scroll;
-    font-size: 1.5em;
+    font-size: 1em;
   }
 
   .main-nav-wrapper a:hover {

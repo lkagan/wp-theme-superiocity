@@ -31,7 +31,17 @@
                 e.preventDefault();
                 document.getElementsByClassName('main-nav-wrapper')[0].classList.remove('open');
             });
+
+        // Smooth scroll from front page down arrow
+        jQuery('.angle-down').click(function(event){
+            event.preventDefault();
+            var trgt = this.href.split("#")[1];
+            var target_offset = jQuery("#"+trgt).offset();
+            var target_top = target_offset.top;
+            jQuery('html, body').animate({scrollTop:target_top}, 750);
+        });
     });
+
 
     document.addEventListener( 'click', closeMenu);
     document.addEventListener( 'touchstart', closeMenu);

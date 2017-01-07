@@ -90,7 +90,7 @@
             </div>
 	        <?php if( has_nav_menu( 'superiocity-main' ) ): ?>
             <div class="menu-button menu-open">
-                <a href="#" id="menu-button"><i class="fa fa-bars"></i> Menu</a></li>
+                <a href="#" id="menu-button"><i class="fa fa-bars"></i> Menu</a>
             </div>
             <div class="main-nav-wrapper">
                 <a href="#" class="menu-close"><i class="fa fa-close"></i> close</a>
@@ -103,7 +103,7 @@
         </header>
             <div class="masthead">
                 <div class="video-bg">
-                    <video src="<?php echo get_template_directory_uri() ?>/bubbles.mp4" autoplay loop poster="<?php echo get_template_directory_uri() ?>/images/bubbles-poster.jpg">
+                    <video id="bubble-video" src="<?php echo get_template_directory_uri() ?>/bubbles.mp4" autoplay loop poster="<?php echo get_template_directory_uri() ?>/images/bubbles-poster.jpg">
                         <source src="<?php echo get_template_directory_uri() ?>/bubbles.webm">
                         <source src="<?php echo get_template_directory_uri() ?>/bubbles.mp4">
                     </video>
@@ -118,8 +118,8 @@
                             </div><!-- .phone -->
                         </div><!-- .call-to-action -->
 					</div><!-- .text -->
-                    <a href="#main" name="main"><i class="fa-angle-down fa"></i></a>
+                    <a href="#lower" class="angle-down"><i id="lower" class="fa-angle-down fa"></i></a>
                 </div><!-- .wrapper -->
             </div><!-- .masthead -->
 			<?php endif; ?>
-        <div class="main clearfix">
+        <div class="main clearfix" >
