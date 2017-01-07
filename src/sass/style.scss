@@ -124,7 +124,7 @@ body {
   color: #eee;
   width: 100%;
   z-index: 100;
-  background: linear-gradient(to bottom, rgb(0,0,0), rgba(0,0,0, .7) 60%, transparent);
+  background: linear-gradient(to bottom, #000f27,  #000f27 30%, rgba(#000f27 , .7) 70%, rgba(#000f27, 0));
 }
 
 .site-header .logo {
@@ -199,8 +199,7 @@ h2 {
 .masthead {
   height: 100vh;
   position: relative;
-  background-color: rgba(0,00,17,.9);
-  box-shadow: inset 0 -16px 19px 0px rgba(0,0,0,.5);
+  background-color: rgba(0,0,17,.85);
 }
 
 .inner .masthead {
@@ -240,7 +239,7 @@ video::-webkit-media-controls-start-playback-button {
   text-align: center;
   font-size: 2.2em;
   text-shadow: 3px 3px 3px rgba(0,0,0, .7);
-  padding: 1em 1em 0;
+  padding: 2em 1em 0;
   letter-spacing: .03em;
   position: absolute;
   top: 45%;
@@ -691,7 +690,7 @@ h1 {
   font-size: .8em;
   color: #ccc;
   line-height: 1.8em;
-  background-color: #222;
+  background-color: #000f27;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -757,6 +756,7 @@ h3 {
 
 .home .about .content .text {
   margin-right: 250px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.8);
 }
 
 .home .about .larry {
@@ -768,6 +768,7 @@ h3 {
 
 .home .overlay {
   background-color: rgba(0,0,0,.85);
+  background-color: rgba(#000f27,.85);
 }
 
 .feature-list-wrapper {
@@ -788,7 +789,6 @@ h3 {
   break-inside: avoid;
   opacity: 0;
   transition: all .5s;
-  z-index: 20000;
   transform: translateZ(0) translateX(-100%);
 }
 
@@ -823,13 +823,12 @@ h3 {
 .home .certs .logos {
   display: flex;
   list-style: none;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-around;
   margin-left: 0;
 }
 
 .home .certs .logos img {
-  height:95px;
   width: auto;
 }
 
@@ -1408,7 +1407,7 @@ a.group1:hover {
     transform: translateX(100%);
     transition: transform .3s;
     box-shadow: -4px 0 4px rgba(0,0,0,.5);
-    background-color: rgba(0,0,0, 1);
+    background-color: rgba(#000f27, 1);
     position: fixed;
     top: 0;
     height: 100%;
@@ -1434,7 +1433,7 @@ a.group1:hover {
 
   nav.menu-main-menu-container li {
     text-align: left;
-    border-bottom: solid 1px #333;
+    border-bottom: solid 1px lighten(#000f27, 5%);
     padding: 0 1em;
   }
 
@@ -1444,6 +1443,10 @@ a.group1:hover {
 
   .menu-button {
     display: block;
+  }
+
+  .home .certs .logos {
+    flex-wrap: wrap;
   }
 }
 
