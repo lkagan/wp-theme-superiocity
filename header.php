@@ -118,8 +118,8 @@
                             </div><!-- .phone -->
                         </div><!-- .call-to-action -->
 					</div><!-- .text -->
-                    <a href="#main" name="main"><i class="fa-angle-down fa"></i></a>
+                    <a href="#lower" class="angle-down"><i id="lower" class="fa-angle-down fa"></i></a>
                 </div><!-- .wrapper -->
             </div><!-- .masthead -->
 			<?php endif; ?>
-        <div class="main clearfix">
+        <div class="main clearfix" >
