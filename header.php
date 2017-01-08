@@ -90,10 +90,10 @@
             </div>
 	        <?php if( has_nav_menu( 'superiocity-main' ) ): ?>
             <div class="menu-button menu-open">
-                <a href="#" id="menu-button"><i class="fa fa-bars"></i> Menu</a>
+                <a href="#" id="menu-button"><i class="fa fa-bars"></i> menu</a>
             </div>
             <div class="main-nav-wrapper">
-                <a href="#" class="menu-close"><i class="fa fa-close"></i> close</a>
+                <a href="#" class="menu-close">close <i class="fa fa-angle-right"></i> </a>
 				<?php wp_nav_menu( array( 'container' => 'nav' )); ?>
                 <div class="menu-contact">
                     <span class="phone"><i class="fa fa-phone"></i> <?php if( function_exists( 'eeb_content' ) )  echo eeb_content('<a href="tel:5613361119">(561) 336-1119 <div class="tip"><i class="fa fa-hand-pointer-o"></i> tap to call</div></a>'); ?></span><br>

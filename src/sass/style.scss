@@ -363,11 +363,12 @@ nav li a:hover, nav li a:active, nav li.current_page_item a {
 }
 
 .menu-button {
+  font-size: 1em;
   display: none;
   flex-grow: 1;
   text-align: right;
   vertical-align: bottom;
-  line-height: 2.25em;
+  line-height: 2em;
 }
 
 .main-nav-wrapper .menu-close {

@@ -18,7 +18,7 @@
         }
 
         // Small screen menu open
-        document.getElementsByClassName('menu-open')[0]
+        document.getElementsByClassName('menu-button')[0]
             .addEventListener('click', function(e) {
                 e.preventDefault();
                 document.getElementsByClassName('main-nav-wrapper')[0].classList.add('open');
