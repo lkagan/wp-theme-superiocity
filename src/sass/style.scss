@@ -203,7 +203,7 @@ h2 {
 }
 
 .inner .masthead {
-  height: 45vh;
+  height: 18rem;
 }
 
 .masthead .wrapper {
@@ -1356,7 +1356,7 @@ a.group1:hover {
 
 @media screen and (max-width: 1050px) {
   .masthead .text {
-    font-size: 2em;
+    font-size: 1.80em;
   }
 
   .featured-projects .og-grid {
@@ -1522,7 +1522,6 @@ a.group1:hover {
 
   .masthead .text {
     text-shadow: 3px 3px 5px rgba(0,0,0, .8);
-    font-size: 2em;
     text-align: center;
   }
 
@@ -1588,7 +1587,13 @@ a.group1:hover {
   }
 
   .masthead .text {
-    font-size: 1.75em;
+    font-size: 1.7em;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .masthead .text {
+    font-size: 1.5em;
   }
 }
 
@@ -1673,7 +1678,7 @@ a.group1:hover {
   }
 
   .masthead .text {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 
   .box, #huge_it_portfolio_container_2 > div {
@@ -1753,6 +1758,10 @@ a.group1:hover {
     font-size: 1.25em;
   }
 
+  .masthead .text .call-to-action {
+    font-size: .85em;
+  }
+
   .wp-care-plans {
     position: relative;
     height: auto;
@@ -1807,10 +1816,6 @@ a.group1:hover {
 
 @media screen and (max-width: 400px) {
 
-  .inner .masthead {
-    height: 50vh;
-  }
-
   .home .main h2, .main h1  {
     font-size: 1.75em;
     line-height: 1.3em;
@@ -1822,6 +1827,19 @@ a.group1:hover {
 
   .inner .masthead .text {
     margin-top: 1em;
+  }
+
+  .inner .masthead .text .tag1 {
+    font-size: .85em;
+  }
+
+  .inner .masthead {
+    height: 15rem;
+  }
+
+  .masthead .text .tag1 {
+    padding: 0 .5em 1rem;
+    font-size: 1.3em;
   }
 
   .page-id-1313 .post {
@@ -1863,6 +1881,22 @@ a.group1:hover {
     letter-spacing: .2em;
   }
 }
+
+@media screen and (max-width: 350px) {
+
+  .inner .masthead .text .tag1 {
+    font-size: 1.13em;
+  }
+
+  .inner .masthead .text .tag1 {
+    font-size: .80em;
+  }
+
+  .masthead .text .call-to-action {
+    font-size: .70em;
+  }
+}
+
 
 @media screen and (max-height: 400px) {
   .masthead .fa-angle-down {
