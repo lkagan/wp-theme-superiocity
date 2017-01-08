@@ -124,7 +124,7 @@ body {
   color: #eee;
   width: 100%;
   z-index: 100;
-  background: linear-gradient(to bottom, rgb(0,0,0), rgba(0,0,0, .7) 60%, transparent);
+  background: linear-gradient(to bottom, #000f27,  #000f27 30%, rgba(#000f27 , .7) 70%, rgba(#000f27, 0));
 }
 
 .site-header .logo {
@@ -199,8 +199,7 @@ h2 {
 .masthead {
   height: 100vh;
   position: relative;
-  background-color: rgba(0,00,17,.9);
-  box-shadow: inset 0 -16px 19px 0px rgba(0,0,0,.5);
+  background-color: rgba(0,0,17,.85);
 }
 
 .inner .masthead {
@@ -249,13 +248,20 @@ video::-webkit-media-controls-start-playback-button {
   width: 100%;
 }
 
-.masthead .text .call-to-action {
-  margin-top: .75em;
-  font-size: .75em;
-  border: .15em $brand-color2 solid;
+.masthead .text .tag1 {
+  padding: 0 1em 1rem;
   display: inline-block;
-  padding: .5em 1em;
-  border-radius: .25em;
+  border-bottom: .15rem $brand-color2 solid;
+}
+
+.inner .masthead .text {
+  padding: 4em 1em 0;
+}
+
+.masthead .text .call-to-action {
+  font-size: .75em;
+  display: block;
+  padding: 1rem 1em;
   text-shadow: -1px -1px 2px rgba(0,0,0,.2);
   text-transform: capitalize;
   font-variant: normal;
@@ -280,7 +286,32 @@ video::-webkit-media-controls-start-playback-button {
   position: absolute;
   bottom: .75em;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, 0);
+  animation-name: bounce-arrow;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+}
+
+@keyframes bounce-arrow {
+  from {
+    bottom: .75em;
+  }
+
+  50% {
+    bottom: .75em;
+  }
+
+  60% {
+    bottom: .5em;
+  }
+
+  70% {
+    bottom: .75em;
+  }
+
+  to {
+    bottom: .75em;
+  }
 }
 
 nav {
@@ -335,11 +366,12 @@ nav li a:hover, nav li a:active, nav li.current_page_item a {
 }
 
 .menu-button {
+  font-size: 1em;
   display: none;
   flex-grow: 1;
   text-align: right;
   vertical-align: bottom;
-  line-height: 2.25em;
+  line-height: 2em;
 }
 
 .main-nav-wrapper .menu-close {
@@ -691,7 +723,7 @@ h1 {
   font-size: .8em;
   color: #ccc;
   line-height: 1.8em;
-  background-color: #222;
+  background-color: #000f27;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -757,6 +789,7 @@ h3 {
 
 .home .about .content .text {
   margin-right: 250px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.8);
 }
 
 .home .about .larry {
@@ -768,6 +801,7 @@ h3 {
 
 .home .overlay {
   background-color: rgba(0,0,0,.85);
+  background-color: rgba(#000f27,.85);
 }
 
 .feature-list-wrapper {
@@ -788,7 +822,6 @@ h3 {
   break-inside: avoid;
   opacity: 0;
   transition: all .5s;
-  z-index: 20000;
   transform: translateZ(0) translateX(-100%);
 }
 
@@ -823,13 +856,12 @@ h3 {
 .home .certs .logos {
   display: flex;
   list-style: none;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-around;
   margin-left: 0;
 }
 
 .home .certs .logos img {
-  height:95px;
   width: auto;
 }
 
@@ -1408,7 +1440,7 @@ a.group1:hover {
     transform: translateX(100%);
     transition: transform .3s;
     box-shadow: -4px 0 4px rgba(0,0,0,.5);
-    background-color: rgba(0,0,0, 1);
+    background-color: rgba(#000f27, 1);
     position: fixed;
     top: 0;
     height: 100%;
@@ -1434,7 +1466,7 @@ a.group1:hover {
 
   nav.menu-main-menu-container li {
     text-align: left;
-    border-bottom: solid 1px #333;
+    border-bottom: solid 1px lighten(#000f27, 5%);
     padding: 0 1em;
   }
 
@@ -1444,6 +1476,10 @@ a.group1:hover {
 
   .menu-button {
     display: block;
+  }
+
+  .home .certs .logos {
+    flex-wrap: wrap;
   }
 }
 
