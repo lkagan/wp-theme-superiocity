@@ -239,7 +239,7 @@ video::-webkit-media-controls-start-playback-button {
   text-align: center;
   font-size: 2.2em;
   text-shadow: 3px 3px 3px rgba(0,0,0, .7);
-  padding: 2em 1em 0;
+  padding: 1em 1em 0;
   letter-spacing: .03em;
   position: absolute;
   top: 45%;
@@ -248,8 +248,12 @@ video::-webkit-media-controls-start-playback-button {
   width: 100%;
 }
 
+.inner .masthead .text {
+  padding: 3em 1em 0;
+}
+
 .masthead .text .call-to-action {
-  margin-top: .75em;
+  margin-top: 1.5em;
   font-size: .75em;
   border: .15em $brand-color2 solid;
   display: inline-block;
@@ -290,15 +294,15 @@ video::-webkit-media-controls-start-playback-button {
     bottom: .75em;
   }
 
-  25% {
+  50% {
     bottom: .75em;
   }
 
-  37% {
+  60% {
     bottom: .5em;
   }
 
-  50% {
+  70% {
     bottom: .75em;
   }
 
