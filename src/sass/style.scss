@@ -279,7 +279,32 @@ video::-webkit-media-controls-start-playback-button {
   position: absolute;
   bottom: .75em;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, 0);
+  animation-name: bounce-arrow;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+}
+
+@keyframes bounce-arrow {
+  from {
+    bottom: .75em;
+  }
+
+  25% {
+    bottom: .75em;
+  }
+
+  37% {
+    bottom: .5em;
+  }
+
+  50% {
+    bottom: .75em;
+  }
+
+  to {
+    bottom: .75em;
+  }
 }
 
 nav {
