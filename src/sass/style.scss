@@ -963,7 +963,15 @@ textarea {
   white-space: nowrap;
 }
 
-input[type=submit], a.button {
+.main #huge_it_portfolio_content_2 .og-grid > li > a > figure ,
+.main #huge_it_portfolio_content_3 .og-grid > li > a > figure {
+  background: rgba(0,15,35, .7);
+}
+
+input[type=submit], a.button,
+div#huge_it_portfolio_content_2 .og-expander .og-details a.link-button,
+div#huge_it_portfolio_content_3 .og-expander .og-details a.link-button,
+div.og-details .buttons-list a {
   text-shadow: -1px -1px 2px rgba(0,0,0,.1);
   display: inline-block;
   text-decoration: none;
@@ -981,6 +989,26 @@ input[type=submit], a.button {
     background-color: darken($brand-color2, 10%);
     cursor: pointer;
   }
+}
+
+div#huge_it_portfolio_content_2 .og-expander .og-details a.link-button,
+div#huge_it_portfolio_content_2 .og-expander .og-details a.link-button:hover,
+div#huge_it_portfolio_content_3 .og-expander .og-details a.link-button,
+div#huge_it_portfolio_content_3 .og-expander .og-details a.link-button:hover,
+div.portfolio-gallery-content .og-expander .og-details a.link-button:hover
+{
+  font-size: .85em;
+  font-weight: normal;
+  text-transform: lowercase;
+}
+
+.main .og-details a:hover {
+  background-image: none;
+  color: #fff !important;
+}
+
+.main .og-expander .og-details p{
+  color: #ccc !important;
 }
 
 .portelement_2 div.right-block .button-block a, .portelement_2 div.right-block .button-block a:link, .portelement_2 div.right-block .button-block a:visited {
@@ -1072,6 +1100,11 @@ pre {
 
 .portfolio-container .portelement_2 div.right-block .description-block_2 {
   text-align: left;
+}
+
+div#huge_it_portfolio_content_2 .og-expander,
+div#huge_it_portfolio_content_3 .og-expander {
+  background-color: #000f27;
 }
 
 #huge_it_portfolio_content_2 #huge_it_portfolio_container_2 {
