@@ -55,6 +55,7 @@
     document.addEventListener( 'click', closeMenu);
     document.addEventListener( 'touchstart', closeMenu);
     document.addEventListener( 'scroll', animateItems );
+    window.addEventListener( 'resize', animateItems );
 })();
 
 
