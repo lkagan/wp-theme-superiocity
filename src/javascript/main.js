@@ -40,6 +40,15 @@
             var target_top = target_offset.top;
             jQuery('html, body').animate({scrollTop:target_top}, 750);
         });
+
+        // Attach click event to info icons on WP care plans
+        var wpInfoLinks = document.querySelectorAll('.care-plans .info-link');
+
+        if(wpInfoLinks) {
+            for(var i = 0; i < wpInfoLinks.length; ++i) {
+                wpInfoLinks[i].addEventListener('click', toggleCarePlanInfo);
+            }
+        }
     });
 
 
@@ -167,4 +176,18 @@ function isChild(node, parent)
     }
 
     return false;
+}
+
+
+function toggleCarePlanInfo(e)
+{
+    e.preventDefault();
+
+    // Get current target
+    var target = document.getElementById(this.dataset.target);
+
+    // get current toggle status of target
+    var on = target.classList.contains('show');
+
+    target.classList.toggle('show');
 }

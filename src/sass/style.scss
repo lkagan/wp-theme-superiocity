@@ -24,11 +24,6 @@ $heading-color: #eee;
   padding: 0;
 }
 
-html {
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -105,14 +100,21 @@ li {
 }
 
 html {
-  min-height: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 body {
   font-family: "Century Gothic", "CenturyGothic",  verdana, sans-serif;
   letter-spacing: .03em;
   font-weight: normal;
-  min-height: 100%;
   overflow-x: hidden;
 }
 
@@ -401,6 +403,7 @@ ul {
 .main {
   letter-spacing: normal;
   line-height: 1.5em;
+  flex-grow: 1;
 
   .inner & h2 {
     color: $brand-color1;
@@ -500,6 +503,34 @@ ul {
   transform: translate(-50px, -50%);
 }
 
+.care-plans .description {
+  height: 0;
+  transition: all .3s;
+  overflow: hidden;
+  opacity: 0;
+  color: $brand-color1;
+  font-size: .85em;
+  line-height: 1.3em;
+}
+
+.care-plans .info-link {
+  color: $brand-color1;
+}
+
+.care-plans .info-link i {
+  display: inline;
+  margin-left: .25em;
+}
+
+.care-plans .info-link:hover {
+  text-decoration: none;
+}
+
+.care-plans .description.show {
+  height: 100%;
+  opacity: 1;
+}
+
 .wp-care-plans .button {
   margin-top: .5em;
 }
@@ -532,7 +563,7 @@ ul {
   margin: 2em -2em 12em;
   overflow: visible;;
   position: relative;
-  flex: 1 1 0;
+  flex: 1 1 0px;
   box-sizing: border-box;
 }
 
@@ -1003,7 +1034,7 @@ div.portfolio-gallery-content .og-expander .og-details a.link-button:hover
 }
 
 .main .og-details a:hover {
-  background-image: none;
+  background-image: none !important;
   color: #fff !important;
 }
 
@@ -1107,9 +1138,6 @@ div#huge_it_portfolio_content_3 .og-expander {
   background-color: #000f27;
 }
 
-#huge_it_portfolio_content_2 #huge_it_portfolio_container_2 {
-  width: auto !important;
-}
 
 .og-grid .og-details li {
   display: list-item;
