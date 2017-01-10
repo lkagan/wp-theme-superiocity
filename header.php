@@ -120,6 +120,7 @@
 					</div><!-- .text -->
                     <a href="#lower" class="angle-down"><i id="lower" class="fa-angle-down fa"></i></a>
                 </div><!-- .wrapper -->
+                <div class="arrow-down dark"></div>
             </div><!-- .masthead -->
 			<?php endif; ?>
         <div class="main clearfix" >
