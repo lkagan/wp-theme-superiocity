@@ -401,13 +401,14 @@ ul {
 
 .inner .main {
   background-color: #eee;
-  padding: 2em 3em;
+  padding: 3em;
 }
 
 .main {
   letter-spacing: normal;
   line-height: 1.5em;
   flex-grow: 1;
+  position: relative;
 
   .inner & h2 {
     color: $brand-color1;
@@ -664,6 +665,38 @@ ul {
   transform: translateX(-50%);
 }
 
+.arrow-down {
+  height: 0;
+  width: 0;
+  border-left: 1.5em solid transparent;
+  border-right: 1.5em solid transparent;
+  z-index: 10;
+}
+
+.arrow-down.dark {
+  border-top: 1.5em solid rgba(#000f27, .97);
+}
+
+.arrow-down.light{
+  border-top: 1.5em solid #eee;
+}
+
+.site-footer .arrow-down {
+  top: 0;
+  left: 50%;
+  transform: translateX(-75%);
+}
+
+.arrow-down.opacity {
+  border-top: 1.5em solid rgba(#000f27, .85);
+}
+
+.arrow-down {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .care-plans .best-for .label {
   display: block;
   font-weight: bold;
@@ -750,6 +783,7 @@ h1 {
 
 
 .site-footer {
+  position: relative;
   text-align: center;
   font-size: .8em;
   color: #ccc;
@@ -758,7 +792,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 2em 1em;
+  padding: 3em 1em;
 
   div {
     text-align: center;
@@ -881,7 +915,7 @@ h3 {
 
 .certs {
   background-color: #eee;
-  padding: 3em 0;
+  padding: 4em 0;
 }
 
 .home .certs .logos {
@@ -960,7 +994,7 @@ h3 a:hover {
 
 .featured-projects {
   background-color: #eee;
-  padding: 3em 0 6em 0;
+  padding: 4em 0 6em 0;
   position: relative;
 }
 
@@ -1243,7 +1277,7 @@ a.group1:hover {
 .quote-wrapper {
   position: relative;
   background-color: #eee;
-  padding: 3em 0 6em;
+  padding: 4em 0 6em;
 }
 
 .box, .home .quotes li  {
