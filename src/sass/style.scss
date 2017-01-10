@@ -363,6 +363,10 @@ nav li a:visited,
   text-decoration: none;
 }
 
+.main-nav-wrapper .menu-item i {
+  display: none;
+}
+
 nav li a:hover, nav li a:active, nav li.current_page_item a {
   border-top: solid 2px $brand-color1;
 }
@@ -1533,6 +1537,11 @@ a.group1:hover {
 
   nav.menu-main-menu-container li.current_page_item a {
     border-top: none;
+  }
+
+  .main-nav-wrapper .menu-item i {
+    display: inline;
+    margin-right: .5em;
   }
 
   .menu-button {
