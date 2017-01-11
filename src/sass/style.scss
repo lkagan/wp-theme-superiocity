@@ -204,6 +204,10 @@ h2 {
   background-color: rgba(0,0,17,.85);
 }
 
+.masthead .call-to-action .mobile {
+  display: none;
+}
+
 .inner .masthead {
   height: 18rem;
 }
@@ -263,7 +267,7 @@ video::-webkit-media-controls-start-playback-button {
 .masthead .text .call-to-action {
   font-size: .75em;
   display: block;
-  padding: 1rem 1em;
+  padding: 1rem 0;
   text-shadow: -1px -1px 2px rgba(0,0,0,.2);
   text-transform: capitalize;
   font-variant: normal;
@@ -401,13 +405,14 @@ ul {
 
 .inner .main {
   background-color: #eee;
-  padding: 2em 3em;
+  padding: 3em;
 }
 
 .main {
   letter-spacing: normal;
   line-height: 1.5em;
   flex-grow: 1;
+  position: relative;
 
   .inner & h2 {
     color: $brand-color1;
@@ -680,6 +685,12 @@ ul {
   border-top: 1.5em solid #eee;
 }
 
+.site-footer .arrow-down {
+  top: 0;
+  left: 50%;
+  transform: translateX(-75%);
+}
+
 .arrow-down.opacity {
   border-top: 1.5em solid rgba(#000f27, .85);
 }
@@ -776,6 +787,7 @@ h1 {
 
 
 .site-footer {
+  position: relative;
   text-align: center;
   font-size: .8em;
   color: #ccc;
@@ -784,7 +796,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 2em 1em;
+  padding: 3em 1em;
 
   div {
     text-align: center;
@@ -1765,6 +1777,10 @@ a.group1:hover {
 }
 
 @media screen and (max-width: 640px) {
+  .masthead .fa-angle-down {
+    transform: translate(-50%, -10%);
+  }
+
   div.panel-wrapper {
     padding: 0;
   }
@@ -1825,23 +1841,6 @@ a.group1:hover {
     display: none;
   }
 
-  .menu-contact {
-    display: block;
-    padding: 1em;
-  }
-
-  .menu-contact a {
-    color: #fff;
-  }
-
-  .menu-contact .tip {
-    margin-top: .25em;
-    font-size: .85em;
-  }
-
-  .menu-contact a:hover {
-    text-decoration: none;
-  }
 }
 
 @media screen and (max-width: 550px) {
@@ -1885,6 +1884,32 @@ a.group1:hover {
 
 
 @media screen and (max-width: 500px) {
+  .menu-contact {
+    display: block;
+    padding: 1em;
+  }
+
+  .menu-contact a {
+    color: #fff;
+  }
+
+  .menu-contact .tip {
+    margin-top: .25em;
+    font-size: .85em;
+  }
+
+  .menu-contact a:hover {
+    text-decoration: none;
+  }
+
+  .masthead .call-to-action .non-mobile {
+    display: none;
+  }
+
+  .masthead .call-to-action .mobile {
+    display: inline-block;
+  }
+
   .entries .entry {
     display: block;
 

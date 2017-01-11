@@ -1,5 +1,6 @@
             </div> <!-- .main -->
             <footer class="site-footer">
+                <div class="arrow-down light"></div>
                 <div class="column1">
                     <div class="phone"><i class="fa fa-phone"></i> <?php if( function_exists( 'eeb_content' ) )  echo eeb_content('<a href="tel:5613361119">(561) 336-1119</a>'); ?></div>
                     <div class="email"><i class="fa fa-envelope"></i> <span class="emailLink"><?php if( function_exists( 'eeb_content' ) ) echo eeb_content('<a href="mailto:larry@superiocity.com">larry@superiocity.com</a>'); ?></span></div>
