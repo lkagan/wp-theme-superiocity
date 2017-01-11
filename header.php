@@ -112,10 +112,13 @@
 					<div class="text">
                         <div class="tag1">Get Superior Results with a Superior Website</div>
                         <div class="call-to-action">
-                            Call now for a free consultation
+	                        <?php if( function_exists( 'eeb_content' ) )  echo eeb_content('<a href="tel:5613361119">
+                            <span class="non-mobile">Call now</span>
+                            <span class="mobile">Tap to call</span>
+                            for a free consultation
                             <div class="phone">
-								<?php if( function_exists( 'eeb_content' ) )  echo eeb_content('<a href="tel:5613361119"><i class="fa fa-phone"></i> (561) 336-1119</a>'); ?>
-                            </div><!-- .phone -->
+								<i class="fa fa-phone"></i> (561) 336-1119</a>
+                            </div>'); ?><!-- .phone -->
                         </div><!-- .call-to-action -->
 					</div><!-- .text -->
                     <a href="#lower" class="angle-down"><i id="lower" class="fa-angle-down fa"></i></a>
