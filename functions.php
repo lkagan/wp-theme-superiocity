@@ -1,12 +1,30 @@
 <?php
+/**
+ * Miscellaneous setup for the superiocity theme.
+ *
+ * @package superiocity
+ */
 
-// Add RSS links to <head> section
-add_theme_support( 'automatic-feed-link' );
+declare(strict_types = 1);
 
+/**
+ * Theme initialization.
+ */
+function superiocity_init() {
+	// Add RSS links to <head> section.
+	add_theme_support( 'automatic-feed-link' );
+	add_theme_support( 'title-tag' );
+	add_theme_support( 'menus' );
+	add_theme_support( 'post-thumbnails', array( 'post' ) );
+}
 
+add_action( 'init', 'superiocity_init' );
+
+/**
+ * Enqueue script and styles.
+ */
 function enqueue_superiocity_scripts() {
 	if ( ! is_admin() ) {
-
 		wp_enqueue_script( 'jquery' );
 		wp_register_script( 'superiocity-main',
 			get_bloginfo( 'template_url' ) . '/javascript/main.min.js', false,
@@ -14,7 +32,7 @@ function enqueue_superiocity_scripts() {
 		wp_enqueue_script( 'superiocity-main' );
 
 		wp_register_style( 'font-awesome',
-			'//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
+			get_stylesheet_directory_uri() . '/css/font-awesome-4.7.0/css/font-awesome.min.css',
 			false );
 		wp_enqueue_style( 'font-awesome' );
 	}
@@ -44,8 +62,6 @@ if ( function_exists( 'register_sidebar' ) ) {
 	) );
 }
 
-add_theme_support( 'menus' );
-add_theme_support( 'post-thumbnails', array ( 'post' ) );
 
 register_nav_menu( 'superiocity-main', 'Superiocity Main Menu' );
 
@@ -54,6 +70,3 @@ function new_excerpt_more( $more ) {
 }
 
 add_filter( 'excerpt_more', 'new_excerpt_more' );
-
-// Disable Yoast SEO structured data
-//add_filter( 'wpseo_json_ld_output', '__return_false' );
