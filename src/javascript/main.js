@@ -17,20 +17,25 @@
             }
         }
 
-        // Small screen menu open
-        document.getElementsByClassName('menu-button')[0]
-            .addEventListener('click', function(e) {
-                e.preventDefault();
-                document.getElementsByClassName('main-nav-wrapper')[0].classList.add('open');
-            });
+        var mainNavWrapper = document.getElementsByClassName('main-nav-wrapper')[0];
+
+        // Main nav doesn't exist on landing pages.
+        if(mainNavWrapper) {
+            // Small screen menu open
+            document.getElementsByClassName('menu-button')[0]
+                .addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.getElementsByClassName('main-nav-wrapper')[0].classList.add('open');
+                });
 
 
-        // Small screen menu close
-        document.getElementsByClassName('menu-close')[0]
-            .addEventListener('click', function(e) {
-                e.preventDefault();
-                document.getElementsByClassName('main-nav-wrapper')[0].classList.remove('open');
-            });
+            // Small screen menu close
+            document.getElementsByClassName('menu-close')[0]
+                .addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.getElementsByClassName('main-nav-wrapper')[0].classList.remove('open');
+                });
+        }
 
         // Smooth scroll from front page down arrow
         jQuery('.angle-down').click(function(event){
@@ -42,7 +47,7 @@
         });
 
         // Attach click event to info icons on WP care plans
-        var wpInfoLinks = document.querySelectorAll('.care-plans .info-link');
+        var wpInfoLinks = document.querySelectorAll('.care-plans .info-link, .maintain .info-link');
 
         if(wpInfoLinks) {
             for(var i = 0; i < wpInfoLinks.length; ++i) {
