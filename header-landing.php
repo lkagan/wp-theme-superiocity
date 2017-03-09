@@ -23,7 +23,7 @@
 					?>
 					<a href="<?= $landing_home_url ?>"><img src="<?= bloginfo('template_url'); ?>/images/superiocity.svg" width="120" class="logo" alt="Superiocity Web Development and Design"></a>
 					<div class="comp-name">
-						<a href="<?= $landing_home_url ?>"><h1 class="company-name"><?php echo get_the_title( $_POST['id'] ); ?></h1></a>
+						<a href="<?= $landing_home_url ?>"><h1 class="company-name"><?php echo get_the_title( $_POST['id'] ?? null ); ?></h1></a>
                         <a href="/"><div class="by-line">by Superiocity <span class="trademark">&reg;</span></div></a>
 					</div>
 				</div>

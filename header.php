@@ -66,7 +66,7 @@
 					<?php wp_nav_menu( array( 'container' => 'nav' )); ?>
 					<div class="menu-contact">
 						<span class="phone"><i class="fa fa-phone"></i> <?php if( function_exists( 'eeb_content' ) )  echo eeb_content('<a href="tel:5613361119">(561) 336-1119 <div class="tip"><i class="fa fa-hand-pointer-o"></i> tap to call</div></a>'); ?></span><br>
-						<span class="email"><i class="fa fa-envelope"></i> <span class="emailLink"><?php if( function_exists( 'eeb_content' ) ) echo eeb_content('<a href="mailto:larry@superiocity.com">larry@superiocity.com</a>'); ?></span></span>
+						<span class="email"><i class="fa fa-envelope"></i> <span class="emailLink"><?php if( function_exists( 'eeb_content' ) ) echo eeb_content('<a href="mailto:service@superiocity.com">service@superiocity.com</a>'); ?></span></span>
 					</div>
 				</div>
 				<?php endif; ?>
