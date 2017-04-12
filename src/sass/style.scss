@@ -888,19 +888,35 @@ h1 {
   z-index: 1;
   position: relative;
   text-align: center;
-  font-size: .8em;
   color: #ccc;
   line-height: 1.8em;
   background-color: #000f27;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 5em 1em 7em;
+  padding: 5em 1em 1em;
 
-  div {
-    text-align: center;
-    flex-grow: 1;
-    margin: 0 1em;
+  .copyright {
+    font-size: .75em;
+  }
+
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    address {
+      display: inline-block;
+    }
+
+    & > div {
+      text-align: left;
+      margin: 0 2em 3em 2em;
+    }
+
+    .fa {
+      text-align: right;
+      vertical-align: top;
+      transform: translateY(50%);
+      margin-right: .25em;
+    }
   }
 }
 
@@ -2236,6 +2252,16 @@ a.group1:hover {
   h1 {
     margin: 0 0 1em;
   }
+
+  .site-footer .columns {
+    display: inline-block;
+  }
+
+  .site-footer .columns {
+    & > div {
+      width: 100%;
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -2428,6 +2454,20 @@ a.group1:hover {
 
   .site-header h2 {
     letter-spacing: .2em;
+  }
+
+  .site-footer {
+    .links .seperator {
+      display: inline-block;
+    }
+
+    .seperator {
+      display: none;
+    }
+
+    .links {
+      display: block;
+    }
   }
 }
 
