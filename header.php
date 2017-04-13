@@ -20,6 +20,13 @@
 				"telephone" : "+1-561-336-1119",
 				"contactType" : "customer service"
 			}],
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "3516 Hudson Lane",
+				"addressLocality": "Boynton Beach",
+				"addressRegion": "Florida",
+				"postalCode": "33436"
+			},
 			"sameAs" : [
 				"https://www.facebook.com/superiocity",
 				"https://twitter.com/superiocity_web",
