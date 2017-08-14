@@ -10,7 +10,7 @@ get_header(); ?>
 
 				<div class="quote-wrapper">
 					<div class="centered-block">
-						<h2>Superior Service</h2>
+						<h2>Superior Reviews</h2>
 						<?php if ( have_rows( 'reviews' ) ) : ?>
 							<ul class="quotes">
 								<?php while ( have_rows( 'reviews' ) ) : the_row() ?>
