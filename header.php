@@ -81,7 +81,7 @@
             <div class="masthead">
                 <div class="background-overlay"></div>
                 <div class="video-bg">
-                    <video id="bubble-video" src="<?php echo get_template_directory_uri() ?>/bubbles.webm" autoplay loop poster="<?php echo get_template_directory_uri() ?>/images/bubbles-poster.jpg">
+                    <video id="bubble-video" src="<?php echo get_template_directory_uri() ?>/bubbles.mp4" autoplay="autoplay" loop="loop" poster="<?php echo get_template_directory_uri() ?>/images/bubbles-poster.jpg">
                         <source src="<?php echo get_template_directory_uri() ?>/bubbles.webm">
                         <source src="<?php echo get_template_directory_uri() ?>/bubbles.mp4">
                     </video>
