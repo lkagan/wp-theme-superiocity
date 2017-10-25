@@ -9,8 +9,8 @@
 							<div class="email"><i class="fa fa-envelope"></i> <span class="emailLink"><?php if( function_exists( 'eeb_content' ) ) echo eeb_content('<a href="mailto:service@superiocity.com">service@superiocity.com</a>'); ?></span></div>
                             <i class="fa fa-map-marker"></i>
                             <address>
-                                3516 Hudson Lane<br />
-                                Boynton Beach, FL 33436<br />
+								512 Lucerne Ave<br />
+								Lake Worth, FL 33460<br />
                             </address>
 						</div><!-- .column1 -->
 						<div class="column2">
